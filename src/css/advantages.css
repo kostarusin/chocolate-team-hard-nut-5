@@ -20,12 +20,14 @@ padding-top: 113px; ;
 .advantages-icon-circle{
     position: absolute; 
     display: block;
-    width: 62;
-    height: 62;
+stroke: rgba(255, 255, 255, 0.5);
+
+
 
 }
 .advantages-icon {
-    background-color: tomato;
+    /* background-color: tomato; */
+    fill: var(--text-color-accent);
      position: absolute; 
      left: 30px; 
      transform: translate(-50%, 50%);
