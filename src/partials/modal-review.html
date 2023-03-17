@@ -1,0 +1,60 @@
+<button class="js-open-modal" data-modal="3">Leave a review</button>
+<div class="modal modal-review" data-modal="3">
+  <!--   Svg icon -->
+  <svg
+    class="modal__cross js-modal-close"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 24 24"
+  >
+    <path
+      d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"
+    />
+  </svg>
+  <h2 class="modal-review-title">
+    leave a review about
+    <span class="modal-review-title-orange">our chocolate</span>
+  </h2>
+  <form class="modal-review-form">
+    <label for="name"></label>
+    <div>
+      <input
+        type="text"
+        name="name"
+        id="name"
+        class="modal-review-input"
+        placeholder="Name"
+      />
+    </div>
+
+    <label for="email"></label>
+    <input
+      type="email"
+      name="email"
+      id="email"
+      class="modal-review-input"
+      placeholder="Enter your email"
+    />
+    <label for="tel"></label>
+    <input
+      type="text"
+      name="tel"
+      id="tel"
+      class="modal-review-input"
+      placeholder="Phone number"
+    />
+
+    <label class="label-title" for="comment"></label>
+
+    <textarea
+      type="text"
+      name="comment"
+      id="comment"
+      class="modal-review-input"
+      placeholder="Enter text"
+    ></textarea>
+
+    <div><button class="btn-send" type="submit">Send</button></div>
+  </form>
+</div>
+<!-- overlay -->
+<!-- <div class="overlay js-overlay-modal"></div> -->
