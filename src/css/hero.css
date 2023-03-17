@@ -1,11 +1,13 @@
 .hero {
 
-    max-width: 335px;
+
     margin: auto;
     background-image: url();
 }
 
-.container {}
+.container {
+    max-width: 335px;
+}
 
 .hero-box {}
 
