@@ -1,20 +1,23 @@
 .hero {
-
-
-    margin: auto;
-    background-image: url();
+  margin: auto;
+  background-image: url();
 }
 
 .container {
-    max-width: 335px;
+  max-width: 335px;
 }
 
-.hero-box {}
+.hero-box {
+}
 
-.hero-content {}
+.hero-content {
+}
 
-.hero-title {}
+.hero-title {
+}
 
-.btn {}
+.btn {
+}
 
-.btn2 {}
+.btn2 {
+}
