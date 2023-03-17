@@ -1,6 +1,7 @@
 .hero {
-
-
+    width: 375px;
+    padding-left: 20px;
+    padding-right: 20px;
     margin: auto;
     background-image: url();
 }
@@ -13,8 +14,22 @@
 
 .hero-content {}
 
-.hero-title {}
+.hero-title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: -0.03em;
+    color: #FFFFFF;
+}
 
 .btn {}
 
 .btn2 {}
+
+.hero-menu {
+
+    width: ;
+    height: ;
+}
