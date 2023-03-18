@@ -7,7 +7,7 @@
   }
 
   .hero-box {
-    background-image: url(../img/hero/hero-cover1x.jpg);
+    background-image: url(/img/hero/hero-cover1x.jpg);
     background-size: auto;
     min-width: 335px;
     min-height: 620px;
@@ -88,11 +88,15 @@
     margin-bottom: 32px;
   }
 
-  .hero-icon {
+  .hero-icon-soc {
+    border: 50%;
     background-color: #FFFFFF;
-    display: block;
-    margin-bottom: 20px;
-    border-radius: 50%;
+  }
+
+  .hero-icon-close {
+    position: absolute;
+    margin: 0 auto;
+    padding: 0;
   }
 
 
@@ -100,12 +104,47 @@
 
   @media screen and (min-width: 768px) {
     .hero-box {
-      background-image: url(../img/hero/hero-tablet1x.jpg);
+      background-image: url(/img/hero/hero-tablet1x.jpg);
+      min-width: 624px;
+      min-height: 179px;
+      display: flex-box;
+      padding-left: 32px;
+      padding-right: 32px;
+    }
+
+    .hero-button {
+      margin-left: 40px;
+      display: flex;
+      margin-bottom: 0;
+      justify-content: flex-start;
+    }
+
+    .h-scroll {
+      margin-right: 40px;
+      margin-bottom: 32px;
+      display: flex;
+      justify-content: flex-end;
+
+    }
+
+    .hero-scroll {
+      margin-bottom: 32px;
+      justify-items: flex-end;
+    }
+
+    .hero-title {
+      margin-left: 40px;
+      width: 484px;
+      font-size: 28px;
+      line-height: 1.2;
+      letter-spacing: -0.03em;
+      margin-bottom: 32px;
+
     }
   }
 
   @media screen and (min-width: 1200px) {
     .hero-box {
-      background-image: url(../img/hero/desktop1x.jpg);
+      background-image: url(/img/hero/desktop1x.jpg);
     }
   }
