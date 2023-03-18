@@ -1,23 +1,111 @@
-.hero {
-  margin: auto;
-  background-image: url();
-}
+  .hero {
+    max-width: 335px;
+    min-height: 620px;
+    background-size: cover;
+    justify-content: center;
+    margin: auto;
+  }
 
-.container {
-  /* max-width: 335px; */
-}
+  .hero-box {
+    background-image: url(../img/hero/hero-cover1x.jpg);
+    background-size: auto;
+    min-width: 335px;
+    min-height: 620px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 
-.hero-box {
-}
+  .hero-image-container {
+    display: inline-block;
+  }
 
-.hero-content {
-}
+  .hero-title {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: -0.03em;
+    color: #FFFFFF;
+    width: 299px;
+    min-height: 72px;
+    margin: auto;
+    padding-top: 395px;
+  }
 
-.hero-title {
-}
+  .hero-button {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+  }
 
-.btn {
-}
+  .btn {
+    gap: 14px;
+    width: 120px;
+    height: 41px;
+    background: #FD9222;
+    border-radius: 100px;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+  }
 
-.btn2 {
-}
+  .btn2 {
+    gap: 14px;
+    width: 159px;
+    height: 41px;
+    border: 1px solid #FFFFFF;
+    border-radius: 100px;
+    background: transparent;
+    color: #FFFFFF;
+  }
+
+  .hero-scroll {
+    display: block;
+    width: 67px;
+    height: 14px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.7;
+    letter-spacing: -0.03em;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+    justify-content: center;
+    margin-left: 20px;
+  }
+
+  .h-scroll {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 32px;
+  }
+
+  .hero-button {
+    margin-top: 32px;
+    margin-bottom: 32px;
+  }
+
+  .hero-icon {
+    background-color: #FFFFFF;
+    display: block;
+    margin-bottom: 20px;
+    border-radius: 50%;
+  }
+
+
+  @media screen and (min-width: 375px) {}
+
+  @media screen and (min-width: 768px) {
+    .hero-box {
+      background-image: url(../img/hero/hero-tablet1x.jpg);
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    .hero-box {
+      background-image: url(../img/hero/desktop1x.jpg);
+    }
+  }
