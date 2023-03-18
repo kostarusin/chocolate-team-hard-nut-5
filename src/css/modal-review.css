@@ -38,12 +38,12 @@
   border-radius: 15px;
 }
 .modal-cross {
-  width: 12px;
-  height: 12px;
+  width: 24px;
+  height: 24px;
   position: absolute;
   top: 14px;
   right: 14px;
-  fill: var(--modal-title-color);
+  stroke: var(--modal-title-color);
   cursor: pointer;
 }
 .modal-review {
@@ -165,10 +165,10 @@
     gap: 19px;
   }
   .modal-cross {
-    width: 14px;
-    height: 14px;
-    top: 31px;
-    right: 31px;
+    width: 28px;
+    height: 28px;
+    top: 24px;
+    right: 24px;
   }
   .modal-review-title,
   .modal-review-title-orange {
@@ -186,11 +186,11 @@
     left: 26px;
     width: 125px;
     height: 32px;
-    gap: 18px;
   }
   .modal-review-flag {
     width: 32px;
     height: 32px;
+    margin-right: 18px;
   }
   .modal-review-prefix {
     font-size: 18px;
@@ -211,4 +211,7 @@
     width: 117px;
     margin-top: -1px;
   }
+}
+
+@media (min-width: 1200px) {
 }
