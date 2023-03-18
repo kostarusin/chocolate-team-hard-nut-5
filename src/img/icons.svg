@@ -37,5 +37,8 @@
      <path fill="#ffd700" style="fill: var(--color1, #ffd700)" d="M40.745 1.354h-40.435v30.092h40.435v-30.092z"></path>
      <path fill="#0057b7" style="fill: var(--color2, #0057b7)" d="M0.311 1.354h40.434v15.045h-40.435v-15.045z"></path>
      </symbol>
+     <symbol id="icon-x-close" viewBox="0 0 32 32">
+     <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.2857" d="M24 8l-16 16M8 8l16 16"></path>
+     </symbol>
   </defs>
 </svg>
