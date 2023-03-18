@@ -1,0 +1,183 @@
+:root {
+  --container-width: 100%;
+  --main-background-color: #e2e2e2;
+  --text-color-blond: #ffffff;
+  --text-color-blond-advantages: rgba(255, 255, 255, 0.7);
+  --text-color-our-products-reviews: rgba(17, 17, 17, 0.7);
+  --text-color-accent: #fd9222;
+  --input-placeholder-text-color: rgba(64, 64, 64, 0.3);
+  --text-general:#111111;
+
+}
+
+*{box-sizing: border-box;}
+
+
+
+.made {background-color:var(--main-background-color);
+  padding-top: 72px;
+  display: flex;
+justify-content: center;
+    flex-direction: column}
+
+
+
+.how-made {font-family: montserrat;
+font-weight: 600;
+font-size: 24px;
+line-height: 1.17;
+text-align: center;
+letter-spacing: -0.03em;
+text-transform: uppercase;
+color: var(--text-general);
+margin-bottom: 32px;}
+
+.accent{color: var(--text-color-accent);}
+
+
+.two-made{display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;}
+
+.background-made{
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+  background-image: url(../img/how-its-made/image.png);
+padding:233px 150px 232px 150px;
+background-repeat: no-repeat;
+    max-width: 335px;
+}
+
+.chocolate-made-div {background-color: var(--text-color-blond);border-radius: 15px; padding: 20px 14px 20px 30px; margin-top: 20px; max-width: 335px;}
+.chocolate-made {color: var(--text-general);
+font-family: Montserrat;
+font-weight: 600;
+font-size: 18px;
+line-height: 1.33;
+margin-bottom: 20px;
+}
+.made-button {border:none;background-color: transparent;padding: 0;}
+.made-list{
+display: flex;
+flex-direction: column;
+list-style: disc;
+color: var(--text-general);
+font-family: Montserrat;
+font-weight: 400;
+font-size: 14px;
+line-height: 1.29;
+letter-spacing: -0.02em;
+gap: 18px;
+padding: 0 30px;}
+
+
+.svg-made{
+  border: 1px solid var(--text-color-blond);
+  border-radius: 50%;
+stroke:var(--text-color-blond); fill:var(--text-color-blond);
+width: 35px;
+height: 35px;
+
+
+}
+
+@media (min-width: 768px) {
+    :root {
+      --container-width: 768px;
+    }
+    .container {
+      padding-left: 32px;
+      padding-right: 32px;}
+
+
+      .made {
+        padding-top: 100px;
+          display: flex;
+justify-content: center;
+    align-items: center;
+
+      }
+
+      .how-made {font-size: 24px; margin-bottom: 50px;}
+
+.svg-made{
+width: 44px;
+height: 44px;
+}
+
+.two-made{display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;}
+      .background-made{
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+  background-image: url(../img/how-its-made/image2tablet.png);
+padding:176px 307px;
+background-repeat: no-repeat;
+}
+
+.chocolate-made-div {padding: 32px; margin-top: 20px;max-width: 614px;}
+
+
+.chocolate-made {
+margin-bottom: 28px;
+}
+
+    }
+
+
+    @media (min-width: 1200px) {
+  :root {
+    --container-width: 1200px;
+  }
+
+  .made {
+        padding-top: 128px;
+          display: flex;
+justify-content: center;
+    align-items: center;
+
+      }
+
+      .how-made {font-size: 24px; margin-bottom: 50px;}
+
+      .two-made {display: flex; gap:20px; flex-direction: row;}
+
+
+      .background-made{
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+  background-image: url(../img/how-its-made/image2desktop.png);
+padding:176px 300px;
+background-repeat: no-repeat;
+}
+
+.svg-made{
+width: 44px;
+height: 44px;
+}
+.chocolate-made-div {padding: 32px 32px 94px 32px ; margin-top: 0;max-width: 516px;}
+
+.chocolate-made {
+margin-bottom: 28px;
+}
+
+.made-list{
+display: flex;
+flex-direction: column;
+list-style: disc;
+color: var(--text-general);
+font-family: Montserrat;
+font-weight: 400;
+font-size: 14px;
+line-height: 1.29;
+letter-spacing: -0.02em;
+gap: 24px;
+padding:0 0 0 16px;}
+
+.made-hide {display: none;}
+
+
+}
+
+
+
