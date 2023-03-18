@@ -10,50 +10,61 @@
       d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"
     />
   </svg>
+  <!-- <svg class="modal__cross js-modal-close" width="18" height="20">
+    <use href="../img/icons.svg#icon-x-sign"></use>
+  </svg> -->
   <h2 class="modal-review-title">
     leave a review about
     <span class="modal-review-title-orange">our chocolate</span>
   </h2>
   <form class="modal-review-form">
-    <label for="name"></label>
-    <div>
+    <label>
       <input
         type="text"
         name="name"
-        id="name"
         class="modal-review-input"
         placeholder="Name"
-      />
+        required
+        pattern="^[a-zA-Z]+$"
+        title="Only letters have to be used"
+    /></label>
+    <label>
+      <input
+        type="email"
+        name="email"
+        class="modal-review-input"
+        placeholder="Enter your email"
+        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+        title="Please type correct email address"
+        required
+    /></label>
+    <div class="modal-review-input-wrap">
+      <label>
+        <input
+          type="tel"
+          name="tel"
+          class="modal-review-input modal-review-input-tel"
+          placeholder="Phone number"
+          pattern="[0-9]{9}"
+          required
+        />
+        <div class="modal-review-country-code">
+          <svg width="24" height="24">
+            <use href="../img/icons.svg#icon-instagram"></use>
+          </svg>
+          <span class="modal-review-prefix">+380</span>
+        </div></label
+      >
     </div>
-
-    <label for="email"></label>
-    <input
-      type="email"
-      name="email"
-      id="email"
-      class="modal-review-input"
-      placeholder="Enter your email"
-    />
-    <label for="tel"></label>
-    <input
-      type="text"
-      name="tel"
-      id="tel"
-      class="modal-review-input"
-      placeholder="Phone number"
-    />
-
-    <label class="label-title" for="comment"></label>
-
-    <textarea
-      type="text"
-      name="comment"
-      id="comment"
-      class="modal-review-input"
-      placeholder="Enter text"
-    ></textarea>
-
-    <div><button class="btn-send" type="submit">Send</button></div>
+    <label class="label-title" for="comment">
+      <textarea
+        type="text"
+        name="comment"
+        class="modal-review-input"
+        placeholder="Enter text"
+      ></textarea>
+    </label>
+    <button class="modal-review-btn-send" type="submit">Send</button>
   </form>
 </div>
 <!-- overlay -->

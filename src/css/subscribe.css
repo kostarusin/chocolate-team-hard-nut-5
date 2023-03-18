@@ -1,0 +1,112 @@
+.subscribe {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url(../img/subscribe/Subcribe1x-mobile.jpg);
+
+  width: 100%;
+  height: 370px;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 62px 0px;
+}
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .solutions {
+    background-image: url(../img/subscribe/Subcribe2x-mobile.jpg);
+  }
+}
+.subscribe-title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: -0.03em;
+  color: #ffffff;
+  margin-bottom: 24px;
+  width: 291px;
+  margin-right: auto;
+  margin-left: auto;
+  text-transform: uppercase;
+}
+
+.subscribe-text {
+  line-height: 1.29;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 24px;
+}
+.button-subcribe {
+  font-weight: 600;
+  font-size: 14px;
+  color: #ffffff;
+  width: 128px;
+  height: 41px;
+  background: #fd9222;
+  border-radius: 100px;
+  display: block;
+  margin: 0 auto;
+}
+.button-subcribe:hover,
+.button-subcribe:focus {
+  color: #fd9222;
+  background: #fcf1e0;
+}
+/* Mobile 372 */
+@media screen and (min-width: 372px) {
+  .subscribe {
+    height: 100%;
+  }
+  .subscribe-text {
+    width: 326px;
+  }
+}
+/*Tablet*/
+@media screen and (min-width: 762px) {
+  .subscribe-describe {
+    padding-top: 72px;
+  }
+  .subscribe-title {
+    font-size: 24px;
+    line-height: 1.17;
+  }
+  .subscribe {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+      url(../img/subscribe/Subcribetablet-1x.jpg);
+    min-height: 370px;
+    min-width: 761px;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 72px 0px;
+  }
+}
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .solutions {
+    background-image: url(../img/subscribe/Subcribetablet-2x.jpg);
+  }
+}
+
+/*Desktop*/
+@media screen and (min-width: 1200px) {
+  .subscribe {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+      url(../img/subscribe/Subcribe-desctop-1x.jpg);
+    min-width: 1158px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .solutions {
+    background-image: url(../img/subscribe/Subcribe-desctop-2x.jpg);
+  }
+}
