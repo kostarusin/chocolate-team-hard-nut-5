@@ -78,3 +78,13 @@ body {
   color: #111111;
   background-color: var(--main-background-color);
 }
+
+/* just for review */
+
+.header-menu {
+  display: none;
+}
+
+.modal-review {
+  display: none;
+}
