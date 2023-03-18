@@ -10,7 +10,15 @@
   z-index: 20;
   transition: 0.3s all;
 } */
-
+:root {
+  --container-width: 100%;
+  --main-background-color: #e2e2e2;
+  --text-color-blond: #ffffff;
+  --text-color-blond-advantages: rgba(255, 255, 255, 0.7);
+  --text-color-our-products-reviews: rgba(17, 17, 17, 0.7);
+  --text-color-accent: #fd9222;
+  --input-placeholder-text-color: rgba(64, 64, 64, 0.3);
+}
 .modal {
   opacity: 0;
   visibility: hidden;
@@ -31,6 +39,12 @@
   max-height: 471px;
   overflow: scroll;
 }
+.modal-review-form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 32px;
+  gap: 14px;
+}
 .modal-review-title,
 .modal-review-title-orange {
   font-weight: 600;
@@ -41,7 +55,7 @@
   color: #111111;
 }
 .modal-review-title-orange {
-  color: #fd9222;
+  color: var(--text-color-accent);
 }
 
 .modal.active,
@@ -56,7 +70,7 @@
   position: absolute;
   top: 14px;
   right: 14px;
-  fill: #444;
+  fill: #111111;
   cursor: pointer;
 }
 
@@ -67,15 +81,67 @@
   filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
   border-radius: 8px;
   outline: none;
-  margin-top: 4px;
-  margin-bottom: 8px;
+  padding: 14px 18px;
+  /* margin-bottom: 14px; */
 
+  background: #fafafa;
+}
+.modal-review-input {
+  width: 100%;
+  height: 45px;
+  border: 1.5px solid rgba(17, 17, 17, 0.05);
+  filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
+  border-radius: 8px;
+  outline: none;
+  padding: 14px 18px;
+  background: #fafafa;
+}
+.modal-review-input-wrap {
+  position: relative;
+}
+.modal-review-country-code {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  left: 18px;
+  transform: translateY(-135%);
+  width: 74px;
+  height: 25px;
+  box-shadow: 1.5px 0px 0px rgba(0, 0, 0, 0.1);
+}
+.modal-review-input-tel {
+  padding-left: 100px;
+}
+
+.modal-review-form textarea {
+  resize: none;
+  height: 91px;
+}
+
+.modal-review-input::placeholder {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.21;
+  letter-spacing: -0.02em;
   display: flex;
   align-items: center;
-  letter-spacing: -0.02em;
+  color: var(--input-placeholder-text-color);
+}
 
-  color: rgba(64, 64, 64, 0.3);
+.modal-review-btn-send {
+  padding: 12px 28px;
+  width: 94px;
+  background: var(--text-color-accent);
+  border-radius: 100px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #ffffff;
+  outline: none;
+  border-color: transparent;
+}
+.modal-review-btn-send:hover,
+.modal-review-btn-send:focus {
+  color: var(--text-color-accent);
+  background: #fcf1e0;
 }
