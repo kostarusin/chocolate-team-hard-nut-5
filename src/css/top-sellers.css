@@ -17,9 +17,13 @@
   margin-bottom: 32px;
 }
 .top-sellers-title > span {
-  color: #fd9222;
+  color: var(--text-color-accent);
 }
 
+.top-sellers-list {
+  margin-left: auto;
+  margin-right: auto;
+}
 .top-sellers img {
   border-radius: 15px;
   overflow: hidden;
@@ -43,7 +47,7 @@
 .top-sellers-item:last-child {
   display: none;
 }
-.top-sellers button {
+.top-sellers-btn {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 600;
@@ -61,6 +65,12 @@
   margin-top: 20px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.top-sellers-btn:focus,
+.top-sellers-btn:hover {
+  background: var(--modal-active-btn);
+  color: #fd9222;
 }
 
 @media (min-width: 768px) {
@@ -101,7 +111,7 @@
     letter-spacing: -0.02em;
     color: #111111;
   }
-  .top-sellers button {
+  .top-sellers-btn {
     font-size: 18px;
     line-height: 1.2;
     width: 162px;
