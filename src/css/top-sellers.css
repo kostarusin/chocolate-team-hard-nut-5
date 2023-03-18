@@ -1,0 +1,119 @@
+/* Top Sellers */
+.top-sellers {
+  padding-bottom: 72px;
+  display: flex;
+  justify-content: center;
+}
+.top-sellers-title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: #111111;
+
+  margin-bottom: 32px;
+}
+.top-sellers-title > span {
+  color: #fd9222;
+}
+
+.top-sellers img {
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.top-sellers .text {
+  font-size: 14px;
+  line-height: 1.28;
+  letter-spacing: -0.02em;
+  color: #111111;
+
+  margin-top: 20px;
+  margin-bottom: 32px;
+  max-width: 306px;
+}
+
+.top-sellers-item:last-child {
+  display: none;
+}
+.top-sellers button {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.2;
+  color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 12px 28px;
+  gap: 14px;
+
+  background: #fd9222;
+  border-radius: 100px;
+  border: none;
+
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Media Tablet */
+@media (min-width: 768px) {
+  .top-sellers {
+    padding-bottom: 100px;
+  }
+  .top-sellers-box {
+    position: relative;
+    max-width: 768px;
+  }
+  .top-sellers-list {
+    display: flex;
+    gap: 16px;
+  }
+  .top-sellers-title {
+    font-size: 24px;
+    line-height: 1.16;
+    margin-bottom: 50px;
+  }
+  .top-sellers .text {
+    font-family: 'Montserrat';
+    margin-top: 32px;
+    margin-bottom: 0;
+  }
+
+  .top-sellers button {
+    font-size: 18px;
+    line-height: 22px;
+    padding: 14px 40px;
+    position: absolute;
+    bottom: 40px;
+    right: 30px;
+  }
+}
+/* Media Desktop */
+@media (min-width: 1200px) {
+  .top-sellers {
+    padding-bottom: 128px;
+  }
+  .top-sellers-item:last-child {
+    display: block;
+  }
+  .top-sellers-box {
+    max-width: 1200px;
+  }
+  .top-sellers-item {
+    height: 568px;
+  }
+  .top-sellers-list {
+    position: relative;
+  }
+  .top-sellers .text {
+    position: absolute;
+    max-width: 407px;
+  }
+  .top-sellers button {
+    bottom: 22px;
+  }
+}
