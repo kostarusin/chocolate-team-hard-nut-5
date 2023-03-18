@@ -82,7 +82,6 @@ max-width: 308px;
     .advantages-icons{
         padding-top: 0;
     }
-
   }
 
   @media (min-width: 768px) {
@@ -91,6 +90,7 @@ max-width: 308px;
     }
     .advantages-icons {
         padding-top: 0;
+
     }
     .advantages {
         background-color: rgb(30, 24, 35);
