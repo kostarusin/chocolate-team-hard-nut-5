@@ -29,8 +29,8 @@ stroke: rgba(255, 255, 255, 0.5);
     /* background-color: tomato; */
     fill: var(--text-color-accent);
      position: absolute; 
-     left: 30px; 
-     transform: translate(-50%, 50%);
+     /* left: 30px;  */
+     transform: translate(50%, 50%);
 }
 .advantages-item-icons{
     position: relative; 
@@ -109,7 +109,7 @@ max-width: 308px;
         left: -70px;
         top: 59.5px;
         content: '';
-        border-radius: 1px;
+        /* border-radius: 1px; */
         width: 1px;
         height: 124px;
         background-color: rgba(255, 255, 255, 0.5);;
