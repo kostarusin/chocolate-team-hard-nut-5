@@ -1,5 +1,6 @@
 /* Top Sellers */
 .top-sellers {
+  margin-top: 72px;
   padding-bottom: 72px;
   display: flex;
   justify-content: center;
@@ -24,7 +25,7 @@
   overflow: hidden;
 }
 
-.top-sellers .text {
+.top-sellers .text-mobile {
   font-size: 14px;
   line-height: 1.28;
   letter-spacing: -0.02em;
@@ -33,6 +34,10 @@
   margin-top: 20px;
   margin-bottom: 32px;
   max-width: 306px;
+}
+
+.top-sellers .text-tablet {
+  display: none;
 }
 
 .top-sellers-item:last-child {
@@ -45,75 +50,80 @@
   font-size: 14px;
   line-height: 1.2;
   color: #ffffff;
+  width: 120px;
+  height: 41px;
   display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  padding: 12px 28px;
-  gap: 14px;
-
+  align-items: center;
+  justify-content: center;
   background: #fd9222;
   border-radius: 100px;
   border: none;
-
   margin-top: 20px;
   margin-left: auto;
   margin-right: auto;
 }
-/* Media Tablet */
+
 @media (min-width: 768px) {
   .top-sellers {
+    margin-top: 100px;
     padding-bottom: 100px;
   }
-  .top-sellers-box {
-    position: relative;
-    max-width: 768px;
-  }
-  .top-sellers-list {
-    display: flex;
-    gap: 16px;
-  }
+
   .top-sellers-title {
     font-size: 24px;
     line-height: 1.16;
     margin-bottom: 50px;
   }
-  .top-sellers .text {
-    font-family: 'Montserrat';
-    margin-top: 32px;
-    margin-bottom: 0;
+
+  .top-sellers-list {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+  .top-sellers-item {
+    width: calc((100% - 16px) / 2);
   }
 
+  .top-sellers-wrap {
+    display: flex;
+  }
+
+  .top-sellers .text-mobile {
+    display: none;
+  }
+
+  .top-sellers .text-tablet {
+    display: block;
+    margin-top: 32px;
+    max-width: 306px;
+    font-size: 14px;
+    line-height: 1.28;
+    letter-spacing: -0.02em;
+    color: #111111;
+  }
   .top-sellers button {
     font-size: 18px;
-    line-height: 22px;
-    padding: 14px 40px;
-    position: absolute;
-    bottom: 40px;
-    right: 30px;
+    line-height: 1.2;
+    width: 162px;
+    height: 50px;
+    margin-top: 32px;
+    margin-right: 0;
   }
 }
+
 /* Media Desktop */
 @media (min-width: 1200px) {
   .top-sellers {
+    margin-top: 128px;
     padding-bottom: 128px;
   }
   .top-sellers-item:last-child {
     display: block;
   }
-  .top-sellers-box {
-    max-width: 1200px;
-  }
   .top-sellers-item {
-    height: 568px;
+    width: calc((100% - 32px) / 3);
   }
-  .top-sellers-list {
-    position: relative;
-  }
-  .top-sellers .text {
-    position: absolute;
+  .top-sellers .text-tablet {
     max-width: 407px;
-  }
-  .top-sellers button {
-    bottom: 22px;
   }
 }
