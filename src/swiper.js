@@ -1,0 +1,1 @@
+new Swiper ('.card-slider')
