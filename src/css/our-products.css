@@ -1,0 +1,68 @@
+
+.cost-btn {
+    width: 94px;
+    height: 33px;
+    background: var(--background-btn);
+    border: 1px solid rgba(17, 17, 17, 0.1);
+    border-radius: 100px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;    
+    color: var(--modal-title-color);
+}
+.card-products{
+    height: 364px;
+    text-align: center;
+    background-color: var(--text-color-blond);
+    border: 1px solid rgba(17, 17, 17, 0.1);
+    border-radius: 15px;
+    padding-top: 32px;
+}
+
+.chocolate-img{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.product-title{
+margin-top: 8px;
+margin-bottom: 2px;
+}
+.product-description{
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: -0.02em;
+    color: var(--text-color-our-products-reviews);
+    margin-bottom: 18px;
+}
+@media (min-width: 375px){
+
+}
+
+@media (max-width: 767px){
+    .card-products {
+        width: 335px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .section-title{
+        font-size: 20px;
+        line-height: 1.2;
+    }
+}
+
+@media (min-width: 768px){
+    .card-products{
+        width: 270px;
+    }
+    .section-title {
+        font-size: 24px;
+        line-height: 1.17;
+    }
+}
+
+@media (min-width: 1200px){
+
+}
