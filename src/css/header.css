@@ -27,6 +27,7 @@
     padding-right: 32px;
     margin: 0 auto;
   }
+
   .page-header .header-container {
     display: flex;
     align-items: center;
@@ -37,7 +38,7 @@
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
-    line-height: calc(20/18);
+    line-height: calc(20 / 18);
     letter-spacing: -0.03em;
     color: #111111;
     text-decoration: none;
@@ -51,7 +52,7 @@
     font-style: italic;
     font-weight: 700;
     font-size: 18px;
-    line-height: calc(20/18);
+    line-height: calc(20 / 18);
     letter-spacing: -0.03em;
     color: #111111;
     text-decoration: none;
@@ -68,7 +69,7 @@
   }
   .header-soc-list {
     display: flex;
-    
+
     list-style-type: none;
     gap: 18px;
   }
@@ -93,7 +94,7 @@
     width: 60%;
     height: 100%;
     z-index: 100;
-    background-color: #1E1823;
+    background-color: #1e1823;
     padding: 24px 32px;
   }
   .header-menu > .container-mob-header {
@@ -128,14 +129,14 @@
   .header-mob-item:not(:last-child) {
     margin-bottom: 24px;
   }
-  .header-mob-item:is(:hover, :focus){
+  .header-mob-item:is(:hover, :focus) {
     color: var(--text-color-accent);
   }
   .header-mob-link {
     text-decoration: none;
     font-weight: 500;
     font-size: 14px;
-    line-height: calc(16/14);
+    line-height: calc(16 / 14);
     display: flex;
     align-items: center;
     letter-spacing: -0.02em;
@@ -159,14 +160,14 @@
   .header-logo {
     font-weight: 700;
     font-size: 18px;
-    line-height: calc(20/18);
+    line-height: calc(20 / 18);
     letter-spacing: -0.03em;
     color: #111111;
     text-decoration: none;
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 24px 0
+    padding: 24px 0;
   }
   .span-header {
     font-style: italic;
@@ -203,7 +204,7 @@
     width: 60%;
     height: 100%;
     z-index: 100;
-    background-color: #1E1823;
+    background-color: #1e1823;
     padding: 24px 32px;
   }
   .header-menu > .container-mob-header {
@@ -238,14 +239,14 @@
   .header-mob-item:not(:last-child) {
     margin-bottom: 24px;
   }
-  .header-mob-item:is(:hover, :focus){
+  .header-mob-item:is(:hover, :focus) {
     color: var(--text-color-accent);
   }
   .header-mob-link {
     text-decoration: none;
     font-weight: 500;
     font-size: 14px;
-    line-height: calc(16/14);
+    line-height: calc(16 / 14);
     display: flex;
     align-items: center;
     letter-spacing: -0.02em;
@@ -284,7 +285,7 @@
     color: var(--text-color-accent);
   }
   .link-current::after {
-    content: "";
+    content: '';
     display: block;
     left: 0;
     bottom: 0;
@@ -301,8 +302,8 @@
     color: inherit;
     font-weight: 500;
     font-size: 14px;
-    line-height: calc(16/14);
-      display: flex;
+    line-height: calc(16 / 14);
+    display: flex;
     align-items: center;
     letter-spacing: -0.02em;
     color: #111111;
@@ -347,7 +348,6 @@
     padding: 0px;
     gap: 18px;
     color: #111111;
-    
   }
   .icon-social-header:is(:hover, :focus) {
     color: var(--text-color-accent);
