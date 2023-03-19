@@ -6,6 +6,7 @@
   height: 370px;
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
   padding: 62px 0px;
 }
 @media (min-device-pixel-ratio: 2),
@@ -80,6 +81,7 @@
     min-width: 761px;
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
     padding: 72px 0px;
   }
 }
@@ -100,6 +102,7 @@
     min-width: 1158px;
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
   }
 }
 @media (min-device-pixel-ratio: 2),
