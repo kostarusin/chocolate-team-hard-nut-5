@@ -1,88 +1,54 @@
-.header {
-  padding: 20px 0;
-}
-
-.nav-list {
+/* .nav-list {
   display: flex;
   align-items: center;
   justify-content: flex-end;
   gap: 40px;
 }
-
 .nav-link {
   font-weight: 500;
   letter-spacing: 0.02em;
   line-height: 1.5;
 }
-
 .nav-link:hover,
 .nav-link:focus {
   color: #747bff;
-}
-
-@media (min-width: 375px) {
-  .header-container {
-    min-width: 375px;
-    padding-left: 32px;
-    padding-right: 32px;
-    margin: 0 auto;
+} */
+@media (max-width: 767px) {
+  .page-header {
+    padding: 20px 0;
   }
-
-  .page-header .header-container {
+  .page-header .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-  }
-  .header-logo {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: calc(20 / 18);
-    letter-spacing: -0.03em;
-    color: #111111;
-    text-decoration: none;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 24px 0;
-  }
-  .span-header {
-    font-family: 'Montserrat';
-    font-style: italic;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: calc(20 / 18);
-    letter-spacing: -0.03em;
-    color: #111111;
-    text-decoration: none;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 24px 0;
   }
   .site-nav-header {
     display: none;
   }
   .header-cont-pre {
     display: none;
-  }
+  } 
   .header-soc-list {
     display: flex;
-
     list-style-type: none;
     gap: 18px;
   }
+  .header-logo {
+    width: 169px;
+    height: 21px;
+  }
   .header-burger {
+    position: sticky;
     top: 24px;
     right: 16px;
     width: 32px;
     height: 22px;
-    /* z-index: 1; */
-    /* margin-right: 24px;
     margin-left: auto;
-    margin-bottom: 24px; */
+    margin-right: 0;
     padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: none;
     stroke: currentColor;
     fill: currentColor;
@@ -91,11 +57,21 @@
   .header-menu {
     position: fixed;
     top: 0;
+    right: 0;
     width: 60%;
     height: 100%;
     z-index: 100;
-    background-color: #1e1823;
+    background-color: var(--cards-background-color);
     padding: 24px 32px;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 250ms linear;
+  }
+  .header-menu .js-open-modal {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: initial;
   }
   .header-menu > .container-mob-header {
     height: 100%;
@@ -146,31 +122,13 @@
 }
 
 @media (min-width: 768px) {
-  .header-container {
-    min-width: 768px;
-    padding-left: 32px;
-    padding-right: 32px;
-    margin: 0 auto;
+  .page-header {
+    padding: 20px 0;
   }
-  .page-header .header-container {
+  .page-header .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-  }
-  .header-logo {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: calc(20 / 18);
-    letter-spacing: -0.03em;
-    color: #111111;
-    text-decoration: none;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 24px 0;
-  }
-  .span-header {
-    font-style: italic;
   }
   .site-nav-header {
     display: none;
@@ -188,9 +146,9 @@
     right: 16px;
     width: 32px;
     height: 22px;
+    margin-left: auto;
     /* z-index: 1; */
     /* margin-right: 24px;
-    margin-left: auto;
     margin-bottom: 24px; */
     padding: 0;
     border: none;
@@ -201,11 +159,21 @@
   .header-menu {
     position: fixed;
     top: 0;
+    right: 0;
     width: 60%;
     height: 100%;
     z-index: 100;
-    background-color: #1e1823;
+    background-color: var(--cards-background-color);
     padding: 24px 32px;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 250ms linear;
+  }
+  .header-menu .js-open-modal {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: initial;
   }
   .header-menu > .container-mob-header {
     height: 100%;
@@ -218,7 +186,7 @@
     overflow: hidden;
   }
   .header-mob-close {
-    display: block;
+    /* display: block; */
     margin-left: auto;
     margin-bottom: 100px;
     width: 24px;
@@ -256,13 +224,7 @@
 }
 
 @media (min-width: 1200px) {
-  .header-container {
-    max-width: 1200px;
-    padding-left: 32px;
-    padding-right: 32px;
-    margin: 0 auto;
-  }
-  .page-header .header-container {
+  .page-header .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -271,6 +233,10 @@
     display: flex;
     align-items: center;
     margin-right: auto;
+  }
+  .header-logo {
+    width: 214px;
+    height: 24px;
   }
   .site-nav-header {
     display: flex;
@@ -284,19 +250,6 @@
   .site-nav-header .link-current {
     color: var(--text-color-accent);
   }
-  .link-current::after {
-    content: '';
-    display: block;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 4px;
-    position: absolute;
-    background-color: var(--text-color-accent);
-    border-radius: 2px;
-    /* transform: scale(1);
-    /* transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1); */
-  }
   .header-nav-link {
     text-decoration: none;
     color: inherit;
@@ -306,9 +259,9 @@
     display: flex;
     align-items: center;
     letter-spacing: -0.02em;
-    color: #111111;
+    color: var(--modal-title-color);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    padding: 24px 0;
+    /* padding: 24px 0; */
   }
   .header-nav-link:hover,
   .header-nav-link:focus {
@@ -334,7 +287,7 @@
     justify-content: center;
     align-items: center;
     background-color: transparent;
-    color: #111111;
+    color: var(--modal-title-color);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .header-soc-link:is(:hover, :focus) {
@@ -347,17 +300,14 @@
     align-items: center;
     padding: 0px;
     gap: 18px;
-    color: #111111;
+    stroke: var(--modal-title-color);
+    transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .icon-social-header:is(:hover, :focus) {
-    color: var(--text-color-accent);
+    stroke: var(--text-color-accent);
   }
   .header-menu {
     display: none;
-  }
-  .address-list {
-    display: flex;
-    gap: 40px;
   }
   .header-burger {
     display: none;

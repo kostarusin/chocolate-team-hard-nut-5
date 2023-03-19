@@ -16,6 +16,10 @@
 @import url('./subscribe.css');
 @import url('./footer.css');
 @import url('./modal-review.css');
+@import url('./modal-buy-now.css');
+@import url('./modal-thank-you.css');
+@import url('./modal-feedback.css');
+@import url('./modal-explore.css');
 
 :root {
   --container-width: 100%;

@@ -1,3 +1,4 @@
+
 .section-title {    
     font-style: normal;
     font-weight: 600;    
@@ -50,7 +51,7 @@
     letter-spacing: -0.02em;
     text-transform: uppercase;
     color: var(--modal-title-color);
-}
+
 
 .product-description {
     font-size: 12px;
@@ -75,8 +76,10 @@
         margin-bottom: 32px;
         margin-top: 72px;
     }
+    
     .product-item:not(:last-child){
         margin-bottom: 18px;
+
     }
 }
 
@@ -98,6 +101,7 @@
     }    
 }
 
+
 @media (min-width: 768px) and (max-width: 1199px) {
     .product-item:not(:nth-child(2n)) {
         margin-right: 18px;
@@ -117,4 +121,5 @@
     .product-item:not(:nth-last-child(-n+4)){
         margin-bottom: 18px;
     }
+
 }
