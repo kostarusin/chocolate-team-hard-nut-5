@@ -3,7 +3,7 @@
 background-color: var(--cards-background-color);
 padding-top: 29px;
 padding-bottom: 36px;
-
+/* width:100%; */
 
 }
 .advantages-item {
@@ -133,8 +133,8 @@ max-width: 308px;
     .advantages {
         margin-top: 30px;
         margin-bottom: 50px;
-        padding-left: 50px;
-        padding-right: 50px;
+        /* padding-left: 50px; */
+        /* padding-right: 50px; */
 
     }
 
