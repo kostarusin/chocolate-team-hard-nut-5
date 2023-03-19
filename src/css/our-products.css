@@ -1,18 +1,31 @@
+.section-title {    
+    font-style: normal;
+    font-weight: 600;    
+    text-align: center;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    color: var(--modal-title-color);
+}
+
+.second-part-section-title {
+    color: var(--text-color-accent);
+}
 
 .cost-btn {
     width: 94px;
     height: 33px;
-    background: var(--background-btn);
+    background: var(--main-background-color);
     border: 1px solid rgba(17, 17, 17, 0.1);
     border-radius: 100px;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 600;
     font-size: 14px;
-    line-height: 17px;    
+    line-height: 1.21;
     color: var(--modal-title-color);
 }
-.card-products{
+
+.card-products {
     height: 364px;
     text-align: center;
     background-color: var(--text-color-blond);
@@ -21,48 +34,87 @@
     padding-top: 32px;
 }
 
-.chocolate-img{
+.chocolate-img {
     margin-left: auto;
     margin-right: auto;
 }
 
-.product-title{
-margin-top: 8px;
-margin-bottom: 2px;
+.product-title {
+    margin-top: 8px;
+    margin-bottom: 2px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.33;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: var(--modal-title-color);
 }
-.product-description{
+
+.product-description {
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: -0.02em;
     color: var(--text-color-our-products-reviews);
     margin-bottom: 18px;
 }
-@media (min-width: 375px){
 
-}
+@media (min-width: 375px) {}
 
-@media (max-width: 767px){
+@media (max-width: 767px) {
     .card-products {
         width: 335px;
         margin-left: auto;
         margin-right: auto;
     }
-    .section-title{
+
+    .section-title {
         font-size: 20px;
         line-height: 1.2;
+        margin-bottom: 32px;
+        margin-top: 72px;
+    }
+    .product-item:not(:last-child){
+        margin-bottom: 18px;
     }
 }
 
-@media (min-width: 768px){
-    .card-products{
+@media (min-width: 768px) {
+    .card-products {
         width: 270px;
     }
+
     .section-title {
         font-size: 24px;
         line-height: 1.17;
+        margin-bottom: 50px;
+        margin-top: 100px;
     }
+    .product-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }    
 }
 
-@media (min-width: 1200px){
-
+@media (min-width: 768px) and (max-width: 1199px) {
+    .product-item:not(:nth-child(2n)) {
+        margin-right: 18px;
+    }
+    .product-item:not(:nth-last-child(-n+2)) {
+        margin-bottom: 18px;
+    }
+}
+@media (min-width: 1200px) {
+    .section-title {
+        margin-bottom: 50px;
+        margin-top: 128px;
+    }
+    .product-item.product-item:not(:nth-child(4n+4)){
+        margin-right: 18px;
+    }
+    .product-item:not(:nth-last-child(-n+4)){
+        margin-bottom: 18px;
+    }
 }
