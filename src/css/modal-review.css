@@ -12,12 +12,17 @@
 } */
 :root {
   --container-width: 100%;
-  --main-background-color: #e2e2e2;
+  --main-background-color: #fafafa;
   --text-color-blond: #ffffff;
   --text-color-blond-advantages: rgba(255, 255, 255, 0.7);
   --text-color-our-products-reviews: rgba(17, 17, 17, 0.7);
   --text-color-accent: #fd9222;
   --input-placeholder-text-color: rgba(64, 64, 64, 0.3);
+
+  --modal-title-color: #111111;
+  --modal-border-box-color: rgba(17, 17, 17, 0.05);
+  --modal-tel-prefix: #000000;
+  --modal-active-btn: #fcf1e0;
 }
 .modal {
   opacity: 0;
@@ -29,14 +34,23 @@
   transform: translate(-50%, -50%);
   z-index: 30;
   padding: 32px 24px;
-  background: #fafafa;
+  background: var(--main-background-color);
   border-radius: 15px;
 }
+.modal-cross {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  stroke: var(--modal-title-color);
+  cursor: pointer;
+}
 .modal-review {
-  width: 95%;
+  width: 100%;
+  height: 100%;
   max-width: 311px;
-  height: 95%;
-  max-height: 471px;
+  max-height: 479px;
   overflow: scroll;
 }
 .modal-review-form {
@@ -52,7 +66,7 @@
   line-height: 1.2;
   letter-spacing: -0.03em;
   text-transform: uppercase;
-  color: #111111;
+  color: var(--modal-title-color);
 }
 .modal-review-title-orange {
   color: var(--text-color-accent);
@@ -64,38 +78,17 @@
   visibility: visible;
 }
 
-.modal__cross {
-  width: 12px;
-  height: 12px;
-  position: absolute;
-  top: 14px;
-  right: 14px;
-  fill: #111111;
-  cursor: pointer;
-}
-
 .modal-review-input {
   width: 100%;
   height: 45px;
-  border: 1.5px solid rgba(17, 17, 17, 0.05);
+  border: 1.5px solid var(--modal-border-box-color);
   filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
   border-radius: 8px;
   outline: none;
   padding: 14px 18px;
-  /* margin-bottom: 14px; */
+  background: var(--main-background-color);
+}
 
-  background: #fafafa;
-}
-.modal-review-input {
-  width: 100%;
-  height: 45px;
-  border: 1.5px solid rgba(17, 17, 17, 0.05);
-  filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
-  border-radius: 8px;
-  outline: none;
-  padding: 14px 18px;
-  background: #fafafa;
-}
 .modal-review-input-wrap {
   position: relative;
 }
@@ -109,8 +102,21 @@
   height: 25px;
   box-shadow: 1.5px 0px 0px rgba(0, 0, 0, 0.1);
 }
+.modal-review-flag {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+}
+.modal-review-prefix {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.21;
+  letter-spacing: -0.02em;
+  color: var(--modal-tel-prefix);
+  margin-right: 8px;
+}
 .modal-review-input-tel {
-  padding-left: 100px;
+  padding-left: 106px;
 }
 
 .modal-review-form textarea {
@@ -131,17 +137,81 @@
 .modal-review-btn-send {
   padding: 12px 28px;
   width: 94px;
+  margin-top: 4px;
   background: var(--text-color-accent);
   border-radius: 100px;
   font-weight: 600;
   font-size: 14px;
-  line-height: 17px;
-  color: #ffffff;
+  line-height: 1.21;
+  color: var(--text-color-blond);
   outline: none;
   border-color: transparent;
 }
 .modal-review-btn-send:hover,
 .modal-review-btn-send:focus {
   color: var(--text-color-accent);
-  background: #fcf1e0;
+  background: var(--modal-active-btn);
+}
+
+@media (min-width: 768px) {
+  .modal {
+    padding: 40px;
+  }
+  .modal-review {
+    max-width: 517px;
+    max-height: 631px;
+  }
+  .modal-review-form {
+    gap: 19px;
+  }
+  .modal-cross {
+    width: 28px;
+    height: 28px;
+    top: 24px;
+    right: 24px;
+  }
+  .modal-review-title,
+  .modal-review-title-orange {
+    font-size: 24px;
+    line-height: 1.17;
+    width: 300px;
+  }
+  .modal-review-input {
+    height: 66px;
+    padding: 22px 24px;
+    border-radius: 13px;
+  }
+  .modal-review-country-code {
+    transform: translateY(-150%);
+    left: 26px;
+    width: 125px;
+    height: 32px;
+  }
+  .modal-review-flag {
+    width: 32px;
+    height: 32px;
+    margin-right: 18px;
+  }
+  .modal-review-prefix {
+    font-size: 18px;
+    line-height: 1.22;
+  }
+  .modal-review-input-tel {
+    padding-left: 177px;
+  }
+  .modal-review-input::placeholder {
+    font-size: 18px;
+    line-height: 1.22;
+  }
+  .modal-review-form textarea {
+    height: 137px;
+  }
+  .modal-review-btn-send {
+    padding: 14px 40px;
+    width: 117px;
+    margin-top: -1px;
+  }
+}
+
+@media (min-width: 1200px) {
 }

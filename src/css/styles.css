@@ -16,6 +16,10 @@
 @import url('./subscribe.css');
 @import url('./footer.css');
 @import url('./modal-review.css');
+@import url('./modal-buy-now.css');
+@import url('./modal-thank-you.css');
+@import url('./modal-feedback.css');
+@import url('./modal-explore.css');
 
 :root {
   --container-width: 100%;
@@ -26,6 +30,10 @@
   --text-color-our-products-reviews: rgba(17, 17, 17, 0.7);
   --text-color-accent: #fd9222;
   --input-placeholder-text-color: rgba(64, 64, 64, 0.3);
+  --modal-title-color: #111111;
+  --modal-border-box-color: rgba(17, 17, 17, 0.05);
+  --modal-tel-prefix: #000000;
+  --modal-active-btn: #fcf1e0;
 }
 
 .container {
@@ -86,6 +94,6 @@ body {
   display: none;
 }
 
-.modal-review {
+/* .modal-review {
   display: none;
-}
+} */
