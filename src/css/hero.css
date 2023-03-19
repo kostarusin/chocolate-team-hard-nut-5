@@ -63,6 +63,8 @@
     color: #FFFFFF;
     border: none;
     margin-left: 28px;
+    transition-property: background-color;
+    transition-duration: 250ms;
   }
 
   .btn:hover,
@@ -87,6 +89,8 @@
     border-radius: 100px;
     background: transparent;
     color: #FFFFFF;
+    transition-property: background-color;
+    transition-duration: 250ms;
   }
 
   .btn2:hover,
@@ -117,8 +121,8 @@
     color: #FD9222;
   }
 
-  .hero-svg:hover,
-  .hero-svg:focus {
+  .hero-icon:hover,
+  .hero-icon:focus {
     background: #FD9222;
     fill: #FFFFFF;
   }
@@ -135,10 +139,23 @@
     margin-bottom: 32px;
   }
 
-  .hero-icon-soc {
-    border: 50%;
+  .hero-icon {
+    border-radius: 50%;
+    background: #FCF1E0;
+    fill: #FD9222;
+    transition-property: background-color;
+    transition-duration: 250ms;
+
   }
 
+  .hero-svg {
+    display: flex;
+    justify-content: center;
+    width: 6px;
+    height: 9px;
+    padding: 0;
+    margin: 0;
+  }
 
   @media screen and (min-width: 375px) {
 
