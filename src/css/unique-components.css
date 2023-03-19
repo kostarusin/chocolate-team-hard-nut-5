@@ -1,6 +1,5 @@
 .unique-components {
   padding: 75px 0 0 0;
-  background-color: #fafafa;
 }
 
 .unique-components-title {
@@ -55,10 +54,11 @@
 }
 
 .black-box {
-  background-color: #1e1823;
+  background-color: var(--cards-background-color);
 }
 
 .item-img {
+  width: 224px;
   margin: 28px auto 71px auto;
 }
 
