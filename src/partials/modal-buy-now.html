@@ -1,0 +1,187 @@
+<div class="backdrop">
+  <div class="modal-buy-now">
+    <button class="modal-close-btn">
+      <svg width="24" height="24">
+        <use href="../img/icons.svg#icon-x-close"></use>
+      </svg>
+    </button>
+    <h2 class="modal-title"><span class="title-accent">BUY</span> NOW</h2>
+
+    <!--------------- swiper ---------->
+
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <img
+            srcset="
+              ../img/modal-buy-now/100g-mobile-1x.png 1x,
+              ../img/modal-buy-now/100g-mobile-2x.png 2x
+            "
+            src="../img/modal-buy-now/100g-mobile-1x.png"
+            alt="chocolate"
+            class="swiper-img"
+          />
+          <p class="swiper-text">100g</p>
+        </div>
+        <div class="swiper-slide">
+          <img
+            srcset="
+              ../img/modal-buy-now/200g-mobile-1x.png 1x,
+              ../img/modal-buy-now/200g-mobile-2x.png 2x
+            "
+            src="../img/modal-buy-now/200g-mobile-1x.png"
+            alt="chocolate"
+            class="swiper-img"
+          />
+          <p class="swiper-text">200g</p>
+        </div>
+        <div class="swiper-slide">
+          <img
+            srcset="
+              ../img/modal-buy-now/300g-mobile-1x.png 1x,
+              ../img/modal-buy-now/300g-mobile-2x.png 2x
+            "
+            src="../img/modal-buy-now/300g-mobile-1x.png"
+            alt="chocolate"
+            class="swiper-img"
+          />
+          <p class="swiper-text">300g</p>
+        </div>
+      </div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <!----------- tablet and desktop img --------->
+
+    <div class="tablet-img-wrap">
+      <div class="swiper-slide">
+        <img
+          srcset="
+            ../img/modal-buy-now/100g-tablet-1x.png 1x,
+            ../img/modal-buy-now/100g-tablet-2x.png 2x
+          "
+          src="../img/modal-buy-now/100g-tablet-1x.png"
+          alt="chocolate"
+          class="swiper-img"
+        />
+        <p class="swiper-text">100g</p>
+      </div>
+      <div class="swiper-slide">
+        <img
+          srcset="
+            ../img/modal-buy-now/200g-tablet-1x.png 1x,
+            ../img/modal-buy-now/200g-tablet-2x.png 2x
+          "
+          src="../img/modal-buy-now/200g-tablet-1x.png"
+          alt="chocolate"
+          class="swiper-img"
+        />
+        <p class="swiper-text">200g</p>
+      </div>
+      <div class="swiper-slide">
+        <img
+          srcset="
+            ../img/modal-buy-now/300g-tablet-1x.png 1x,
+            ../img/modal-buy-now/300g-tablet-2x.png 2x
+          "
+          src="../img/modal-buy-now/300g-tablet-1x.png"
+          alt="chocolate"
+          class="swiper-img"
+        />
+        <p class="swiper-text">300g</p>
+      </div>
+    </div>
+
+    <!---------- form  --------->
+
+    <form action="#" class="modal-form">
+      <div class="form-info">
+        <label class="lable-text" for="name">Personal information</label>
+        <div class="surname-input">
+          <input
+            class="form-input"
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Name"
+            pattern="^[a-zA-Z]+$"
+            title="Only letters have to be used"
+            required
+          />
+          <input
+            class="form-input"
+            type="text"
+            name="surname"
+            placeholder="Surname"
+            pattern="^[a-zA-Z]+$"
+            title="Only letters have to be used"
+            required
+          />
+        </div>
+      </div>
+      <div class="form-info">
+        <label class="lable-text" for="mail">Email</label>
+        <input
+          class="form-input"
+          type="email"
+          name="mail"
+          id="mail"
+          placeholder="Enter your email"
+          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+          title="Please type correct email address"
+          required
+        />
+      </div>
+      <div class="form-info">
+        <label class="lable-text" for="tel">Phone number</label>
+        <input
+          class="form-input tel-input"
+          type="tel"
+          name="tel"
+          id="tel"
+          placeholder="Phone number"
+          pattern="[0-9]{9}"
+          required
+        />
+        <div class="country-code">
+          <svg class="country-flag">
+            <use href="/img/icons.svg#icon-flag"></use>
+          </svg>
+          <span class="country-prefix">+380</span>
+        </div>
+      </div>
+
+      <div class="form-info">
+        <label class="lable-text" for="card">Card number</label>
+        <input
+          class="form-input"
+          type="tel"
+          inputmode="numeric"
+          pattern="[0-9\s]{13,19}"
+          maxlength="19"
+          name="card"
+          id="card"
+          placeholder="Enter card"
+          required
+        />
+        <svg class="mastercard" width="32" height="21">
+          <use href="/img/icons.svg#icon-flag"></use>
+        </svg>
+      </div>
+      <div class="form-info">
+        <label class="lable-text" for="comment">Comment</label>
+        <textarea
+          class="form-input form-textarea"
+          name="comment"
+          id="comment"
+          placeholder="Enter text"
+        ></textarea>
+      </div>
+    </form>
+
+    <button class="modal-submit-btn" type="submit">Submit</button>
+  </div>
+</div>
