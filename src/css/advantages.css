@@ -3,7 +3,7 @@
 background-color: var(--cards-background-color);
 padding-top: 29px;
 padding-bottom: 36px;
-
+/* width:100%; */
 
 }
 .advantages-item {
@@ -69,8 +69,8 @@ max-width: 308px;
 }
 @media (min-width: 375px) {
     .advantages {
-        background-color: var(--cards-background-color);
         margin-top: 12px;
+        /* width: 375px; */
         }
      .advantages-list{
         display: flex;
@@ -94,7 +94,7 @@ max-width: 308px;
 
     }
     .advantages {
-        
+        width: 768px;
         padding-top: 50px;
         padding-bottom: 50px;
     }
@@ -106,7 +106,9 @@ max-width: 308px;
     }
   
   @media (min-width: 1200px) {
-
+    .advantages-item:first-child .advantages-icons::after{
+        opacity: 0;
+    }
     .advantages-icons::after{
         position: absolute;
         left: -70px;
@@ -133,8 +135,9 @@ max-width: 308px;
     .advantages {
         margin-top: 30px;
         margin-bottom: 50px;
-        padding-left: 50px;
-        padding-right: 50px;
+         padding-left: 30px; 
+         padding-right: 30px; 
+         width: 1200px;
 
     }
 
