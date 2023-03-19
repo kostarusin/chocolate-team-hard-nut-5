@@ -1,16 +1,14 @@
   .hero {
-    max-width: 335px;
-    min-height: 620px;
-    background-size: cover;
+    /* max-width: 335px; */
+    /* background-size: cover;
     justify-content: center;
-    margin: auto;
+    margin: auto; */
   }
 
   .hero-box {
-    background-image: url(/img/hero/hero-cover1x.jpg);
+    background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url(/img/hero/hero-cover1x.jpg);
     background-size: auto;
-    min-width: 335px;
-    min-height: 620px;
+    border-radius: 30px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -94,9 +92,7 @@
   .btn2:hover,
   .btn2:focus {
 
-    /* width: 163px;
-    height: 53px; */
-    color: #FFFFFF;
+    color: #FD9222;
     border: 10px;
   }
 
@@ -121,8 +117,8 @@
     color: #FD9222;
   }
 
-  .hero-icon-use:hover,
-  .hero-icon-use:focus {
+  .hero-svg:hover,
+  .hero-svg:focus {
     background: #FD9222;
     fill: #FFFFFF;
   }
@@ -141,17 +137,21 @@
 
   .hero-icon-soc {
     border: 50%;
-    background-color: #FFFFFF;
-  }
-
-  .hero-icon-close {
-    position: absolute;
-    margin: 0 auto;
-    padding: 0;
   }
 
 
   @media screen and (min-width: 375px) {
+
+    .hero-box {
+      background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url(/img/hero/hero-cover1x.jpg);
+      background-size: 100%;
+      min-width: 335px;
+      /* min-height: 620px; */
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
     .hero-title {
       margin-left: 40px;
       line-height: 1.2;
@@ -172,13 +172,14 @@
 
   @media screen and (min-width: 768px) {
     .hero-box {
-      background-image: url(/img/hero/hero-tablet1x.jpg);
-      min-width: 624px;
-      min-height: 179px;
+      background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url(/img/hero/hero-tablet1x.jpg);
       display: flex-box;
       padding-left: 32px;
       padding-right: 32px;
+      margin-bottom: 72px;
     }
+
+    .hero-container {}
 
     .hero-button {
       margin-left: 0;
@@ -230,5 +231,6 @@
   @media screen and (min-width: 1200px) {
     .hero-box {
       background-image: url(/img/hero/desktop1x.jpg);
+      max-width: 1135px;
     }
   }
