@@ -20,6 +20,19 @@
     display: inline-block;
   }
 
+  .visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+  }
+
   .hero-title {
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
@@ -50,6 +63,22 @@
     align-items: center;
     justify-content: center;
     color: #FFFFFF;
+    border: none;
+    margin-left: 28px;
+  }
+
+  .btn:hover,
+  .btn:focus {
+    background-color: #FCF1E0;
+    color: #FD9222;
+    cursor: pointer;
+  }
+
+  .btn2:hover,
+  .btn2:focus {
+    background-color: #FCF1E0;
+    color: #FD9222;
+    border: 1px solid #FD9222;
   }
 
   .btn2 {
@@ -61,6 +90,16 @@
     background: transparent;
     color: #FFFFFF;
   }
+
+  .btn2:hover,
+  .btn2:focus {
+
+    /* width: 163px;
+    height: 53px; */
+    color: #FFFFFF;
+    border: 10px;
+  }
+
 
   .hero-scroll {
     display: block;
@@ -77,10 +116,22 @@
     margin-left: 20px;
   }
 
+  .hero-scroll:hover,
+  .hero-scroll:focus {
+    color: #FD9222;
+  }
+
+  .hero-icon-use:hover,
+  .hero-icon-use:focus {
+    background: #FD9222;
+    fill: #FFFFFF;
+  }
+
   .h-scroll {
     display: flex;
     gap: 12px;
     margin-bottom: 32px;
+    cursor: pointer;
   }
 
   .hero-button {
@@ -100,7 +151,24 @@
   }
 
 
-  @media screen and (min-width: 375px) {}
+  @media screen and (min-width: 375px) {
+    .hero-title {
+      margin-left: 40px;
+      line-height: 1.2;
+      letter-spacing: -0.03em;
+      margin-bottom: 32px;
+      font-size: 20px;
+      letter-spacing: -0.03em;
+      color: #FFFFFF;
+    }
+  }
+
+
+  @media screen and (min-width: 425px) {
+    .hero-button {
+      justify-content: flex-start;
+    }
+  }
 
   @media screen and (min-width: 768px) {
     .hero-box {
@@ -113,33 +181,49 @@
     }
 
     .hero-button {
-      margin-left: 40px;
+      margin-left: 0;
       display: flex;
-      margin-bottom: 0;
       justify-content: flex-start;
     }
 
     .h-scroll {
-      margin-right: 40px;
-      margin-bottom: 32px;
       display: flex;
       justify-content: flex-end;
+      margin-bottom: 0;
 
     }
 
     .hero-scroll {
-      margin-bottom: 32px;
+      margin: 0;
       justify-items: flex-end;
+      display: flex;
+      width: 78px;
+      height: 18px;
+      font-size: 14px;
+      line-height: 1.3;
+      letter-spacing: -0.03em;
+
     }
 
     .hero-title {
-      margin-left: 40px;
-      width: 484px;
+      letter-spacing: -0.03em;
+      min-width: 484px;
+      min-height: 102px;
       font-size: 28px;
       line-height: 1.2;
-      letter-spacing: -0.03em;
-      margin-bottom: 32px;
 
+    }
+
+    .hero-tablet {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .btn {
+      width: 144px;
+      height: 45px;
+      border-radius: 100px;
     }
   }
 
