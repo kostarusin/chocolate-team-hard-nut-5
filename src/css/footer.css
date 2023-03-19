@@ -6,7 +6,7 @@
   font-weight: 500;
 
   color: var(--text-color-blond);
-  background: #1e1823;
+  background-color: var(--cards-background-color);
 }
 
 .footer-slogan {
@@ -47,7 +47,7 @@
   line-height: 1.29;
   letter-spacing: -0.02em;
 
-  transition: color 250ms var(--timing-function);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-tel:hover,
@@ -58,10 +58,7 @@
 }
 
 .footer-social-list {
-  display: flex;
-  justify-content: center;
-  gap: 14px;
-  margin-left: auto;
+  display: block;
 }
 
 .footer-soc-item {
@@ -79,7 +76,7 @@
   background-color: transparent;
   fill: transparent;
   stroke: currentColor;
-  transition: stroke 250ms var(--timing-function);
+  transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-soc-link:is(:hover, :focus) {
@@ -110,7 +107,7 @@
   line-height: 1.14;
   letter-spacing: -0.02em;
 
-  transition: color 250ms var(--timing-function);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-link:hover,
@@ -121,6 +118,13 @@
 @media (min-width: 375px) {
   .footer-slogan {
     width: 300px;
+  }
+
+  .footer-social-list {
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+    margin-left: auto;
   }
 }
 
@@ -149,7 +153,7 @@
     gap: 18px;
   }
 
-  .footer-soc-item {
+  .footer-soc-icon {
     width: 24px;
     height: 24px;
   }
@@ -164,11 +168,10 @@
     background-color: transparent;
     fill: transparent;
     stroke: currentColor;
-    transition: stroke 250ms var(--timing-function);
+    transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .footer-adress-social {
-    width: 280px;
     gap: 50px;
 
     border-bottom: none;
@@ -194,13 +197,6 @@
   }
 
   .footer-adress-social {
-    width: 293px;
     gap: 63px;
-  }
-
-  .footer-navigation-list {
-    flex-direction: row;
-    align-items: flex-start;
-    gap: 24px;
   }
 }
