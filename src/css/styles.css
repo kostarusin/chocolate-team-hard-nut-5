@@ -21,6 +21,7 @@
 @import url('./modal-feedback.css');
 @import url('./modal-explore.css');
 
+
 :root {
   --container-width: 100%;
   --main-background-color: #fafafa;
