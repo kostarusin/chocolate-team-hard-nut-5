@@ -21,7 +21,6 @@
 @import url('./modal-feedback.css');
 @import url('./modal-explore.css');
 
-
 :root {
   --container-width: 100%;
   --main-background-color: #fafafa;
@@ -95,6 +94,10 @@ body {
   display: none;
 }
 
-/* .modal-review {
+.modal-review {
   display: none;
-} */
+}
+
+.modal-buy-now {
+  display: none;
+}
