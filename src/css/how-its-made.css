@@ -1,4 +1,4 @@
-:root {
+/*:root {
   --container-width: 100%;
   --main-background-color: #e2e2e2;
   --text-color-blond: #ffffff;
@@ -6,13 +6,13 @@
   --text-color-our-products-reviews: rgba(17, 17, 17, 0.7);
   --text-color-accent: #fd9222;
   --input-placeholder-text-color: rgba(64, 64, 64, 0.3);
-  --text-general:#111111;
+   --modal-title-color: #111111;
 
 }
 
+*/
+
 *{box-sizing: border-box;}
-
-
 
 .made {background-color:var(--main-background-color);
   padding-top: 72px;
@@ -29,7 +29,7 @@ line-height: 1.17;
 text-align: center;
 letter-spacing: -0.03em;
 text-transform: uppercase;
-color: var(--text-general);
+color: var(--modal-title-color);
 margin-bottom: 32px;}
 
 .accent{color: var(--text-color-accent);}
@@ -42,14 +42,14 @@ margin-bottom: 32px;}
 
 .background-made{
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
-  background-image: url(../img/how-its-made/image.png);
+  background-image: url(/img/how-its-made/image.png);
 padding:233px 150px 232px 150px;
 background-repeat: no-repeat;
     max-width: 335px;
 }
 
 .chocolate-made-div {background-color: var(--text-color-blond);border-radius: 15px; padding: 20px 14px 20px 30px; margin-top: 20px; max-width: 335px;}
-.chocolate-made {color: var(--text-general);
+.chocolate-made {color: var(--modal-title-color);
 font-family: Montserrat;
 font-weight: 600;
 font-size: 18px;
@@ -61,7 +61,7 @@ margin-bottom: 20px;
 display: flex;
 flex-direction: column;
 list-style: disc;
-color: var(--text-general);
+color: var(--modal-title-color);
 font-family: Montserrat;
 font-weight: 400;
 font-size: 14px;
@@ -75,11 +75,11 @@ padding: 0 30px;}
   border: 1px solid var(--text-color-blond);
   border-radius: 50%;
 stroke:var(--text-color-blond); fill:var(--text-color-blond);
-width: 35px;
-height: 35px;
-
-
+width: 8px;
+height: 8px;
 }
+
+
 
 @media (min-width: 768px) {
     :root {
@@ -101,8 +101,9 @@ justify-content: center;
       .how-made {font-size: 24px; margin-bottom: 50px;}
 
 .svg-made{
-width: 44px;
-height: 44px;
+position: absolute;
+width: 8px;
+height: 8px;
 }
 
 .two-made{display: flex;
@@ -111,7 +112,7 @@ height: 44px;
     align-items: center;}
       .background-made{
         background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
-  background-image: url(../img/how-its-made/image2tablet.png);
+  background-image: url(/img/how-its-made/image2tablet.png);
 padding:176px 307px;
 background-repeat: no-repeat;
 }
@@ -146,7 +147,7 @@ justify-content: center;
 
       .background-made{
         background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
-  background-image: url(../img/how-its-made/image2desktop.png);
+  background-image: url(/img/how-its-made/image2desktop.png);
 padding:176px 300px;
 background-repeat: no-repeat;
 }
@@ -165,7 +166,7 @@ margin-bottom: 28px;
 display: flex;
 flex-direction: column;
 list-style: disc;
-color: var(--text-general);
+color: var(--modal-title-color);
 font-family: Montserrat;
 font-weight: 400;
 font-size: 14px;
