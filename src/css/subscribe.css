@@ -23,7 +23,7 @@
   line-height: 1.2;
   text-align: center;
   letter-spacing: -0.03em;
-  color: #ffffff;
+  color: var(--text-color-blond);
   margin-bottom: 24px;
   width: 291px;
   margin-right: auto;
@@ -35,7 +35,7 @@
   line-height: 1.29;
   text-align: center;
   letter-spacing: -0.02em;
-  color: #ffffff;
+  color: var(--text-color-blond);
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 24px;
@@ -43,17 +43,19 @@
 .button-subcribe {
   font-weight: 600;
   font-size: 14px;
-  color: #ffffff;
+  color: var(--text-color-blond);
   width: 128px;
   height: 41px;
-  background: #fd9222;
+  background: var(--text-color-accent);
   border-radius: 100px;
   display: block;
   margin: 0 auto;
+  border: 0;
+  cursor: pointer;
 }
 .button-subcribe:hover,
 .button-subcribe:focus {
-  color: #fd9222;
+  color: var(--text-color-accent);
   background: #fcf1e0;
 }
 /* Mobile 372 */
@@ -76,6 +78,10 @@
   }
   .subscribe-text {
     width: 467px;
+  }
+  .button-subcribe {
+    width: 172px;
+    height: 50px;
   }
 
   .subscribe {
