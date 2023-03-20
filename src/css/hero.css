@@ -1,239 +1,235 @@
-  /* .modal-buy-now {
-    display: none;
-  }
+ .hero-box {
+   background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url(/img/hero/hero-cover1x.jpg);
+   background-size: auto;
+   border-radius: 30px;
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+ }
 
-  .backdrop {
-    display: none;
-  } */
+ .hero-image-container {
+   display: inline-block;
+ }
 
-  .hero-box {
-    background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url(/img/hero/hero-cover1x.jpg);
-    background-size: auto;
-    border-radius: 30px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
+ .visually-hidden {
+   position: absolute;
+   white-space: nowrap;
+   width: 1px;
+   height: 1px;
+   overflow: hidden;
+   border: 0;
+   padding: 0;
+   clip: rect(0 0 0 0);
+   clip-path: inset(50%);
+   margin: -1px;
+ }
 
-  .hero-image-container {
-    display: inline-block;
-  }
+ .hero-title {
+   font-family: 'Montserrat', sans-serif;
+   font-style: normal;
+   font-weight: 500;
+   font-size: 20px;
+   line-height: 1.2;
+   letter-spacing: -0.03em;
+   color: var(--text-color-blond);
+   max-width: 299px;
+   min-height: 72px;
+   margin: auto;
+   padding-top: 395px;
+ }
 
-  .visually-hidden {
-    position: absolute;
-    white-space: nowrap;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    border: 0;
-    padding: 0;
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    margin: -1px;
-  }
+ .hero-button {
+   margin: auto;
+   display: flex;
+   justify-content: center;
+   gap: 14px;
+ }
 
-  .hero-title {
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: -0.03em;
-    color: var(--text-color-blond);
-    max-width: 299px;
-    min-height: 72px;
-    margin: auto;
-    padding-top: 395px;
-  }
+ .btn {
+   gap: 14px;
+   width: 120px;
+   height: 41px;
+   background: var(--text-color-accent);
+   border-radius: 100px;
+   align-items: center;
+   justify-content: center;
+   color: var(--text-color-blond);
+   border: none;
+   margin-left: 28px;
+   transition-property: background-color;
+   transition-duration: 250ms;
+ }
 
-  .hero-button {
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    gap: 14px;
-  }
+ .btn:hover,
+ .btn:focus {
+   background-color: var(--modal-active-btn);
+   color: var(--text-color-accent);
+   cursor: pointer;
+ }
 
-  .btn {
-    gap: 14px;
-    width: 120px;
-    height: 41px;
-    background: var(--text-color-accent);
-    border-radius: 100px;
-    align-items: center;
-    justify-content: center;
-    color: var(--text-color-blond);
-    border: none;
-    margin-left: 28px;
-    transition-property: background-color;
-    transition-duration: 250ms;
-  }
+ .btn2:hover,
+ .btn2:focus {
+   background-color: var(--modal-active-btn);
+   color: var(--text-color-accent);
+   border: 1px solid var(--text-color-accent);
+ }
 
-  .btn:hover,
-  .btn:focus {
-    background-color: var(--modal-active-btn);
-    color: var(--text-color-accent);
-    cursor: pointer;
-  }
+ .btn2 {
+   gap: 14px;
+   width: 159px;
+   height: 41px;
+   border: 1px solid var(--text-color-blond);
+   border-radius: 100px;
+   background: transparent;
+   color: var(--text-color-blond);
+   transition-property: background-color;
+   transition-duration: 250ms;
+ }
 
-  .btn2:hover,
-  .btn2:focus {
-    background-color: var(--modal-active-btn);
-    color: var(--text-color-accent);
-    border: 1px solid var(--text-color-accent);
-  }
+ .btn2:hover,
+ .btn2:focus {
 
-  .btn2 {
-    gap: 14px;
-    width: 159px;
-    height: 41px;
-    border: 1px solid var(--text-color-blond);
-    border-radius: 100px;
-    background: transparent;
-    color: var(--text-color-blond);
-    transition-property: background-color;
-    transition-duration: 250ms;
-  }
+   color: var(--text-color-accent);
+   border: 10px;
+ }
 
-  .btn2:hover,
-  .btn2:focus {
+ .hero-scroll {
+   display: block;
+   width: 67px;
+   height: 14px;
+   font-style: normal;
+   font-weight: 500;
+   font-size: 12px;
+   line-height: 1.7;
+   letter-spacing: -0.03em;
+   color: var(--text-color-blond);
+   margin-bottom: 20px;
+   justify-content: center;
+   margin-left: 20px;
+   transition-property: color;
+   transition-duration: 250ms;
+ }
 
-    color: var(--text-color-accent);
-    border: 10px;
-  }
+ .hero-scroll:hover,
+ .hero-scroll:focus {
+   color: var(--text-color-accent);
+ }
 
-  .hero-scroll {
-    display: block;
-    width: 67px;
-    height: 14px;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 1.7;
-    letter-spacing: -0.03em;
-    color: var(--text-color-blond);
-    margin-bottom: 20px;
-    justify-content: center;
-    margin-left: 20px;
-  }
+ .hero-icon:hover,
+ .hero-icon:focus {
+   background: var(--text-color-accent);
+   fill: var(--text-color-blond);
+ }
 
-  .hero-scroll:hover,
-  .hero-scroll:focus {
-    color: var(--text-color-accent);
-  }
+ .h-scroll {
+   display: flex;
+   gap: 12px;
+   margin-bottom: 32px;
+   cursor: pointer;
+ }
 
-  .hero-icon:hover,
-  .hero-icon:focus {
-    background: var(--text-color-accent);
-    fill: var(--text-color-blond);
-  }
+ .hero-button {
+   margin-top: 32px;
+   margin-bottom: 32px;
+ }
 
-  .h-scroll {
-    display: flex;
-    gap: 12px;
-    margin-bottom: 32px;
-    cursor: pointer;
-  }
+ .hero-icon {
+   border-radius: 50%;
+   background: var(--modal-active-btn);
+   fill: var(--text-color-accent);
+   transition-property: background-color;
+   transition-duration: 250ms;
+   border-color: var(--modal-active-btn);
+   border-top: var(--modal-active-btn);
+   transition-property: background-color;
+   transition-duration: 250ms;
 
-  .hero-button {
-    margin-top: 32px;
-    margin-bottom: 32px;
-  }
+ }
 
-  .hero-icon {
-    border-radius: 50%;
-    background: var(--modal-active-btn);
-    fill: var(--text-color-accent);
-    transition-property: background-color;
-    transition-duration: 250ms;
-    border-color: var(--modal-active-btn);
-    border-top: var(--modal-active-btn);
+ @media screen and (min-width: 375px) {
 
-  }
+   .hero-box {
+     background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url(/img/hero/hero-cover1x.jpg);
+     background-size: 100%;
+     min-width: 335px;
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: center;
+   }
 
-  @media screen and (min-width: 375px) {
+   .hero-title {
+     margin-left: 40px;
+     line-height: 1.2;
+     letter-spacing: -0.03em;
+     margin-bottom: 32px;
+     font-size: 20px;
+     letter-spacing: -0.03em;
+     color: var(--text-color-blond);
+   }
+ }
 
-    .hero-box {
-      background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url(/img/hero/hero-cover1x.jpg);
-      background-size: 100%;
-      min-width: 335px;
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
-    }
+ @media screen and (min-width: 425px) {
+   .hero-button {
+     justify-content: flex-start;
+   }
+ }
 
-    .hero-title {
-      margin-left: 40px;
-      line-height: 1.2;
-      letter-spacing: -0.03em;
-      margin-bottom: 32px;
-      font-size: 20px;
-      letter-spacing: -0.03em;
-      color: var(--text-color-blond);
-    }
-  }
+ @media screen and (min-width: 768px) {
+   .hero-box {
+     background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url(/img/hero/hero-tablet1x.jpg);
+     display: flex-box;
+     padding-left: 32px;
+     padding-right: 32px;
+     margin-bottom: 72px;
+   }
 
-  @media screen and (min-width: 425px) {
-    .hero-button {
-      justify-content: flex-start;
-    }
-  }
+   .hero-button {
+     margin-left: 0;
+     display: flex;
+     justify-content: flex-start;
+   }
 
-  @media screen and (min-width: 768px) {
-    .hero-box {
-      background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url(/img/hero/hero-tablet1x.jpg);
-      display: flex-box;
-      padding-left: 32px;
-      padding-right: 32px;
-      margin-bottom: 72px;
-    }
+   .h-scroll {
+     display: flex;
+     justify-content: flex-end;
+     margin-bottom: 0;
+   }
 
-    .hero-button {
-      margin-left: 0;
-      display: flex;
-      justify-content: flex-start;
-    }
+   .hero-scroll {
+     margin: 0;
+     justify-items: flex-end;
+     display: flex;
+     width: 78px;
+     height: 18px;
+     font-size: 14px;
+     line-height: 1.3;
+     letter-spacing: -0.03em;
+   }
 
-    .h-scroll {
-      display: flex;
-      justify-content: flex-end;
-      margin-bottom: 0;
-    }
+   .hero-title {
+     letter-spacing: -0.03em;
+     min-width: 484px;
+     min-height: 102px;
+     font-size: 28px;
+     line-height: 1.2;
+   }
 
-    .hero-scroll {
-      margin: 0;
-      justify-items: flex-end;
-      display: flex;
-      width: 78px;
-      height: 18px;
-      font-size: 14px;
-      line-height: 1.3;
-      letter-spacing: -0.03em;
-    }
+   .hero-tablet {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+   }
 
-    .hero-title {
-      letter-spacing: -0.03em;
-      min-width: 484px;
-      min-height: 102px;
-      font-size: 28px;
-      line-height: 1.2;
-    }
+   .btn {
+     width: 144px;
+     height: 45px;
+     border-radius: 100px;
+   }
+ }
 
-    .hero-tablet {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .btn {
-      width: 144px;
-      height: 45px;
-      border-radius: 100px;
-    }
-  }
-
-  @media screen and (min-width: 1200px) {
-    .hero-box {
-      background-image: url(/img/hero/desktop1x.jpg);
-      max-width: 1135px;
-    }
-  }
+ @media screen and (min-width: 1200px) {
+   .hero-box {
+     background-image: url(/img/hero/desktop1x.jpg);
+     max-width: 1135px;
+   }
+ }
