@@ -1,35 +1,49 @@
-.backdrop {
+.modal {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+
+  z-index: 30;
+
+  transition: 0.3s all;
+}
+
+.overlay {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(46, 47, 66, 0.4);
-
-  transition-property: opacity visibility;
-  transition-duration: 250ms;
-  transition-timing-function: var(--cubic-anim);
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 20;
+  transition: 0.3s all;
 }
 
-/* .is-hidden {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-} */
+.modal.active,
+.overlay.active {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: all;
+}
 
 .modal-buy-now {
   position: absolute;
-  top: 50%;
+  top: 0;
   left: 50%;
-  transform: translate(-50%, -50%) scaleX(1);
-  transition: transform 250ms var(--cubic-anim);
+  transform: translate(-50%, 0);
 
-  width: 311px;
+  width: 100%;
+  max-width: 311px;
   height: 1007px;
   padding: 32px 24px;
   border-radius: 15px;
 
   color: #000000;
+  z-index: 31;
 
   background-color: #fafafa;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
@@ -75,6 +89,10 @@
 .swiper {
   max-width: 231px;
   height: 284px;
+}
+
+.swiper-wrapper {
+  list-style: none;
 }
 
 .swiper-slide {
@@ -150,6 +168,8 @@
 }
 
 .form-input {
+  font-weight: 500;
+  color: var(--modal-title-color);
   font-size: 14px;
   line-height: calc(17 / 14);
   letter-spacing: -0.02em;
@@ -201,14 +221,16 @@
 .country-prefix {
   font-weight: 500;
   font-size: 14px;
-  line-height: 1.21;
+  line-height: calc(17 / 14);
   letter-spacing: -0.02em;
   margin-right: 8px;
 }
 
 .mastercard {
+  width: 23px;
+  height: 14px;
   position: absolute;
-  top: 50%;
+  top: 56%;
   right: 14px;
 }
 
@@ -225,13 +247,16 @@
   border-radius: 100px;
 }
 
-.modal-btn-send:focus,
-.modal-btn-send:hover {
-  background-color: var(--activ-btn-color);
+.modal-submit-btn:hover,
+.modal-submit-btn:focus {
+  background-color: var(--modal-active-btn);
+  color: var(--text-color-accent);
+  outline: none;
 }
 
 @media screen and (min-width: 768px) {
   .modal-buy-now {
+    max-width: 100%;
     width: 609px;
     height: 1058px;
     padding: 48px;
@@ -246,6 +271,7 @@
   .tablet-img-wrap {
     display: flex;
     gap: 16px;
+    list-style: none;
   }
   .swiper-slide {
     width: 160px;
@@ -296,11 +322,23 @@
     line-height: calc(22 / 18);
     margin: 0 0 0 18px;
   }
+  .mastercard {
+    width: 32px;
+    height: 20px;
+    top: 54%;
+    right: 24px;
+  }
   .form-textarea {
     resize: none;
     height: 137px;
   }
   .modal-submit-btn {
     padding: 14px 40px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal-buy-now {
+    top: 50%;
+    transform: translate(-50%, -50%);
   }
 }
