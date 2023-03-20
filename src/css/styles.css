@@ -4,6 +4,7 @@
   | default @import url()
   |============================
 */
+
 @import url('./reset.css');
 @import url('./header.css');
 @import url('./hero.css');
@@ -20,7 +21,6 @@
 @import url('./modal-thank-you.css');
 @import url('./modal-feedback.css');
 @import url('./modal-explore.css');
-
 
 :root {
   --container-width: 100%;
@@ -42,6 +42,12 @@
   padding-left: 20px;
   padding-right: 20px;
   margin: 0 auto;
+}
+
+body {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  color: #111111;
+  background-color: var(--main-background-color);
 }
 
 @media (min-width: 375px) {
@@ -83,18 +89,20 @@
   margin: -1px;
 }
 
-body {
-  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
-  color: #111111;
-  background-color: var(--main-background-color);
-}
-
 /* just for review */
 
 .header-menu {
   display: none;
 }
 
-/* .modal-review {
+.modal-review {
   display: none;
-} */
+}
+
+.modal-buy-now {
+  display: none;
+}
+
+.backdrop {
+  display: none;
+}
