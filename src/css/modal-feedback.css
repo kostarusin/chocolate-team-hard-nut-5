@@ -1,0 +1,12 @@
+
+
+.feedback-text {
+  padding: 84px 24px 178px 58px;
+}
+
+@media (min-width: 768px) {
+
+  .feedback-text {
+  padding: 163px 70px 163px 170px;
+}
+}
