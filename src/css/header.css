@@ -40,7 +40,7 @@
   pointer-events: none;
   transition: opacity 250ms linear;
 }
-.header-menu .js-open-modal {
+.header-menu .header-open-modal {
   opacity: 1;
   visibility: visible;
   pointer-events: initial;
