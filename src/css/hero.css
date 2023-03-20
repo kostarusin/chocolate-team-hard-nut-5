@@ -1,9 +1,10 @@
-  .hero {
-    /* max-width: 335px; */
-    /* background-size: cover;
-    justify-content: center;
-    margin: auto; */
+  /* .modal-buy-now {
+    display: none;
   }
+
+  .backdrop {
+    display: none;
+  } */
 
   .hero-box {
     background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url(/img/hero/hero-cover1x.jpg);
@@ -38,8 +39,8 @@
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: -0.03em;
-    color: #FFFFFF;
-    width: 299px;
+    color: var(--text-color-blond);
+    max-width: 299px;
     min-height: 72px;
     margin: auto;
     padding-top: 395px;
@@ -56,11 +57,11 @@
     gap: 14px;
     width: 120px;
     height: 41px;
-    background: #FD9222;
+    background: var(--text-color-accent);
     border-radius: 100px;
     align-items: center;
     justify-content: center;
-    color: #FFFFFF;
+    color: var(--text-color-blond);
     border: none;
     margin-left: 28px;
     transition-property: background-color;
@@ -69,26 +70,26 @@
 
   .btn:hover,
   .btn:focus {
-    background-color: #FCF1E0;
-    color: #FD9222;
+    background-color: var(--modal-active-btn);
+    color: var(--text-color-accent);
     cursor: pointer;
   }
 
   .btn2:hover,
   .btn2:focus {
-    background-color: #FCF1E0;
-    color: #FD9222;
-    border: 1px solid #FD9222;
+    background-color: var(--modal-active-btn);
+    color: var(--text-color-accent);
+    border: 1px solid var(--text-color-accent);
   }
 
   .btn2 {
     gap: 14px;
     width: 159px;
     height: 41px;
-    border: 1px solid #FFFFFF;
+    border: 1px solid var(--text-color-blond);
     border-radius: 100px;
     background: transparent;
-    color: #FFFFFF;
+    color: var(--text-color-blond);
     transition-property: background-color;
     transition-duration: 250ms;
   }
@@ -96,10 +97,9 @@
   .btn2:hover,
   .btn2:focus {
 
-    color: #FD9222;
+    color: var(--text-color-accent);
     border: 10px;
   }
-
 
   .hero-scroll {
     display: block;
@@ -110,7 +110,7 @@
     font-size: 12px;
     line-height: 1.7;
     letter-spacing: -0.03em;
-    color: #FFFFFF;
+    color: var(--text-color-blond);
     margin-bottom: 20px;
     justify-content: center;
     margin-left: 20px;
@@ -118,13 +118,13 @@
 
   .hero-scroll:hover,
   .hero-scroll:focus {
-    color: #FD9222;
+    color: var(--text-color-accent);
   }
 
   .hero-icon:hover,
   .hero-icon:focus {
-    background: #FD9222;
-    fill: #FFFFFF;
+    background: var(--text-color-accent);
+    fill: var(--text-color-blond);
   }
 
   .h-scroll {
@@ -141,20 +141,13 @@
 
   .hero-icon {
     border-radius: 50%;
-    background: #FCF1E0;
-    fill: #FD9222;
+    background: var(--modal-active-btn);
+    fill: var(--text-color-accent);
     transition-property: background-color;
     transition-duration: 250ms;
+    border-color: var(--modal-active-btn);
+    border-top: var(--modal-active-btn);
 
-  }
-
-  .hero-svg {
-    display: flex;
-    justify-content: center;
-    width: 6px;
-    height: 9px;
-    padding: 0;
-    margin: 0;
   }
 
   @media screen and (min-width: 375px) {
@@ -163,7 +156,6 @@
       background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url(/img/hero/hero-cover1x.jpg);
       background-size: 100%;
       min-width: 335px;
-      /* min-height: 620px; */
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
@@ -176,10 +168,9 @@
       margin-bottom: 32px;
       font-size: 20px;
       letter-spacing: -0.03em;
-      color: #FFFFFF;
+      color: var(--text-color-blond);
     }
   }
-
 
   @media screen and (min-width: 425px) {
     .hero-button {
@@ -196,8 +187,6 @@
       margin-bottom: 72px;
     }
 
-    .hero-container {}
-
     .hero-button {
       margin-left: 0;
       display: flex;
@@ -208,7 +197,6 @@
       display: flex;
       justify-content: flex-end;
       margin-bottom: 0;
-
     }
 
     .hero-scroll {
@@ -220,7 +208,6 @@
       font-size: 14px;
       line-height: 1.3;
       letter-spacing: -0.03em;
-
     }
 
     .hero-title {
@@ -229,7 +216,6 @@
       min-height: 102px;
       font-size: 28px;
       line-height: 1.2;
-
     }
 
     .hero-tablet {

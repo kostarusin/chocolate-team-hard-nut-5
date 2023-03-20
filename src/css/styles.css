@@ -93,16 +93,8 @@ body {
 
 .header-menu {
   display: none;
-}
+} 
 
 .modal-review {
-  display: none;
-}
-
-.modal-buy-now {
-  display: none;
-}
-
-.backdrop {
   display: none;
 }
