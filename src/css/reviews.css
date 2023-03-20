@@ -67,3 +67,10 @@
 
 @media (min-width: 1200px) {
 }
+
+/* .modal-thank {
+  display: none;
+} */
+.reviews {
+  display: none;
+}
