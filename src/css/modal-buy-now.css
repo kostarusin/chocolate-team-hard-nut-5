@@ -1,7 +1,6 @@
 .modal {
   opacity: 0;
   visibility: hidden;
-  pointer-events: none;
 
   z-index: 30;
 
@@ -11,7 +10,6 @@
 .overlay {
   opacity: 0;
   visibility: hidden;
-  pointer-events: none;
 
   position: fixed;
   top: 0;
@@ -27,12 +25,11 @@
 .overlay.active {
   opacity: 1;
   visibility: visible;
-  pointer-events: all;
 }
 
 .modal-buy-now {
   position: absolute;
-  top: 0;
+  top: 20px;
   left: 50%;
   transform: translate(-50%, 0);
 
@@ -86,16 +83,16 @@
 
 /*------------- swiper ------------ */
 
-.swiper {
+.swiper-buy-now {
   max-width: 231px;
   height: 284px;
 }
 
-.swiper-wrapper {
+.swiper-wrapper-buy-now {
   list-style: none;
 }
 
-.swiper-slide {
+.swiper-slide-buy-now {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -109,12 +106,12 @@
   border-radius: 15px;
 }
 
-.swiper-img {
+.swiper-img-buy-now {
   width: 167px;
   height: 148px;
 }
 
-.swiper-text {
+.swiper-text-buy-now {
   color: var(--modal-title-color);
   font-weight: 600;
   font-size: 14px;
@@ -256,6 +253,7 @@
 
 @media screen and (min-width: 768px) {
   .modal-buy-now {
+    position: absolute;
     max-width: 100%;
     width: 609px;
     height: 1058px;
@@ -265,7 +263,7 @@
     font-size: 24px;
     line-height: calc(28 / 24);
   }
-  .swiper {
+  .swiper-buy-now {
     display: none;
   }
   .tablet-img-wrap {
@@ -273,13 +271,13 @@
     gap: 16px;
     list-style: none;
   }
-  .swiper-slide {
+  .swiper-slide-buy-now {
     width: 160px;
     height: 196px;
     gap: 14px;
   }
 
-  .swiper-img {
+  .swiper-img-buy-now {
     width: 120px;
     height: 111px;
   }
@@ -338,7 +336,5 @@
 }
 @media screen and (min-width: 1200px) {
   .modal-buy-now {
-    top: 50%;
-    transform: translate(-50%, -50%);
   }
 }

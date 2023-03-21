@@ -1,0 +1,76 @@
+
+
+.thank-you-h{text-transform: uppercase;
+font-family: montserrat,sans-serif;
+font-weight: 600;
+font-size: 20px;
+line-height: 1.2;
+letter-spacing: -0.02em;
+color: var(--modal-active-btn);
+margin-bottom: 8px;
+}
+
+.thank-p {font-family: montserrat,sans-serif;
+font-weight: 400;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: -0.02em;
+color: var(--text-color-blond);
+}
+
+.thank-you-div {
+  background-color: var(--text-color-accent);
+
+}
+
+.thank-button { background-color: transparent;
+  border-color: transparent;
+
+  position: absolute;
+    top: 14px;
+    right: 14px;
+
+}
+
+.modal-thank {background-color: var(--text-color-accent);
+position: fixed;
+top: 10%;
+left:15%;
+max-width: 311px;
+  max-height: 350px;
+ border-radius: 15px;}
+
+.svg-thank{
+  border: 1px solid var(--text-color-blond);
+  border-radius: 50%;
+stroke:var(--text-color-accent);
+background-color: var(--main-background-color);
+width: 28px;
+height: 28px;
+padding: 0;
+}
+
+
+.thank-text {
+  padding: 84px 24px 170px 68px;
+}
+
+.thank-picture{
+  position:absolute;
+  bottom:0px;
+  border-radius: 15px;}
+
+@media (min-width: 320px) {
+  .modal-thank {max-width: 311px;
+  max-height: 350px;}
+}
+@media (min-width: 768px) {
+   .modal-thank {max-width: 516px;
+  max-height: 414px;}
+  .thank-text {
+  padding: 154px 44px 154px 163px;
+}
+
+.thank-you-h {font-size: 24px;}
+.thank-you-p {font-size: 18px;}
+}

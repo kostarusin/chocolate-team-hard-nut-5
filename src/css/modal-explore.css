@@ -1,0 +1,117 @@
+.modal-explore-title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: var(--modal-title-color);
+  margin-top: 32px;
+  margin-bottom: 24px;
+  margin-left: 24px;
+}
+.modal-explore {
+  width: 100%;
+  height: 350px;
+  overflow: scroll;
+}
+
+.modal-explore-icon {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 15px;
+  right: 14px;
+  stroke: var(--text-color-blond);
+  cursor: pointer;
+}
+.modal-explore-input {
+  width: 163px;
+  height: 45px;
+  filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
+  border: 1.5px solid rgba(17, 17, 17, 0.05);
+  border-radius: 25px;
+  outline: none;
+  padding: 18px 14px;
+  background: var(--main-background-color);
+}
+.modal-explore-input::placeholder {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.21;
+  letter-spacing: -0.02em;
+  display: flex;
+  padding: 18px 14px;
+  align-items: center;
+  color: var(--input-placeholder-text-color);
+}
+
+.modal-explore-btn-send {
+  background: #fd9222;
+  border-radius: 100px;
+  font-weight: 600;
+  line-height: 1.21;
+  font-size: 14px;
+  text-align: center;
+  color: #ffffff;
+  justify-content: center;
+  align-items: center;
+  padding: 14px 22px;
+  gap: 14px;
+  height: 45px;
+  width: 100px;
+  border: 0;
+  cursor: pointer;
+}
+.modal-explore-form {
+  display: flex;
+  padding-left: 24px;
+}
+.modal-explore-lab {
+  gap: 0px;
+}
+/*mobile*/
+@media screen and (min-width: 375px) {
+  .modal-explore {
+    width: 311px;
+  }
+}
+
+/*Tablet*/
+@media screen and (min-width: 768px) {
+  .modal-explore-title {
+    font-size: 24px;
+    line-height: 1.17;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 40px;
+  }
+  .modal-explore-icon {
+    width: 28px;
+    height: 28px;
+    top: 24px;
+    right: 24px;
+  }
+  .modal-explore-input {
+    border-radius: 30px;
+    padding: 24px 14px;
+    width: 313px;
+    height: 52px;
+  }
+  .modal-explore-input::placeholder {
+    font-size: 18px;
+  }
+  .modal-explore-btn-send {
+    height: 52px;
+    width: 137px;
+  }
+  .modal-explore {
+    width: 538px;
+    height: 412px;
+  }
+  .modal-explore-lab {
+    gap: 8px;
+  }
+  .modal-explore-form {
+    padding-left: 40px;
+  }
+}

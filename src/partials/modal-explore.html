@@ -1,0 +1,44 @@
+<div class="modal modal-explore" data-modal="4">
+  <picture>
+    <source
+      srcset="
+        ./img/subscribe/modal-explore-1x.jpg 1x,
+        ./img/subscribe/modal-explore-2x.jpg 2x
+      "
+      type="image/webp"
+    />
+    <source srcset="./img/subscribe/modal-explore-1x.jpg 2x" />
+    <img
+      src="../img/subscribe/modal-explore-1x.jpg"
+      alt="chocolate"
+      width="538"
+      height="196"
+    />
+  </picture>
+  <svg width="14px" height="14px" class="modal-explore-icon js-modal-close">
+    <use href="/img/icons.svg#icon-x-close"></use>
+  </svg>
+  <h2 class="modal-explore-title">
+    Explore our <br />
+    <span style="color: #fd9222">new chocolate&nbsp;</span>first!
+  </h2>
+
+  <form class="modal-explore-form">
+    <div class="modal-explore-lab">
+      <label>
+        <input
+          type="email"
+          name="email"
+          class="modal-explore-input"
+          placeholder="Enter your email"
+          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+          title="Please type correct email address"
+          required
+        />
+      </label>
+      <button class="modal-explore-btn-send js-modal-close" type="submit">
+        Submit
+      </button>
+    </div>
+  </form>
+</div>
