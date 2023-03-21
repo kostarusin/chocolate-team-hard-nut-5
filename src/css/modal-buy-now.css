@@ -278,6 +278,9 @@
   .swiper-buy-now {
     display: none;
   }
+  .slide-box-buy-now {
+    display: none;
+  }
 
   .modal-buy-now {
     position: absolute;
