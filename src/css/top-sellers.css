@@ -1,6 +1,6 @@
 /* Top Sellers */
 .top-sellers {
-  margin-top: 72px;
+  padding-top: 72px;
   padding-bottom: 72px;
   display: flex;
   justify-content: center;
@@ -75,7 +75,7 @@
 
 @media (min-width: 768px) {
   .top-sellers {
-    margin-top: 100px;
+    padding-top: 100px;
     padding-bottom: 100px;
   }
 
@@ -124,7 +124,7 @@
 /* Media Desktop */
 @media (min-width: 1200px) {
   .top-sellers {
-    margin-top: 128px;
+    padding-top: 128px;
     padding-bottom: 128px;
   }
   .top-sellers-item:last-child {
