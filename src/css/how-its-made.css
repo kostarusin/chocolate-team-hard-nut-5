@@ -44,7 +44,8 @@ font-size: 18px;
 line-height: 1.33;
 margin-bottom: 20px;
 }
-.made-button {border:none;background-color: transparent;padding: 0;}
+.made-button {border:none;background-color: transparent;padding: 0; display: flex; justify-content: center;
+    align-items: center;}
 .made-list{
 display: flex;
 flex-direction: column;
@@ -63,8 +64,8 @@ padding: 0 30px;}
   border: 1px solid var(--text-color-blond);
   border-radius: 50%;
 stroke:var(--text-color-blond); fill:var(--text-color-blond);
-width: 8px;
-height: 8px;
+width: 35px;
+height: 35px;
 }
 
 
@@ -90,8 +91,8 @@ justify-content: center;
 
 .svg-made{
 position: absolute;
-width: 8px;
-height: 8px;
+width: 44px;
+height: 44px;
 }
 
 .two-made{display: flex;
@@ -101,7 +102,7 @@ height: 8px;
       .background-made{
         background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
   background-image: url(/img/how-its-made/image2tablet.png);
-padding:176px 307px;
+padding:200px 307px;
 background-repeat: no-repeat;
 }
 
@@ -136,7 +137,7 @@ justify-content: center;
       .background-made{
         background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
   background-image: url(/img/how-its-made/image2desktop.png);
-padding:176px 300px;
+padding:200px 300px;
 background-repeat: no-repeat;
 }
 
