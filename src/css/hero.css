@@ -82,6 +82,9 @@
    border-radius: 100px;
    background: transparent;
    color: var(--text-color-blond);
+   align-items: center;
+   justify-content: center;
+   display: flex;
    transition-property: background-color;
    transition-duration: 250ms;
  }
