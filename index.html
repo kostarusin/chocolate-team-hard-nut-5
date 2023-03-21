@@ -18,22 +18,10 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,700&display=swap"
       rel="stylesheet"
     />
-    <!-- slick  -->
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
-    />
-    <!-- slick  -->
 
     
-    <script type="module" crossorigin src="/chocolate-team-hard-nut-5/assets/index-725fd6c6.js"></script>
-    <link rel="stylesheet" href="/chocolate-team-hard-nut-5/assets/index-f755ba63.css">
+    <script type="module" crossorigin src="/chocolate-team-hard-nut-5/assets/index-6318cb6c.js"></script>
+    <link rel="stylesheet" href="/chocolate-team-hard-nut-5/assets/index-f8af51b8.css">
   </head>
   <body>
     <header class="page-header">
@@ -840,68 +828,99 @@
   </button>
   <h2 class="modal-title"><span class="title-accent">BUY</span> NOW</h2>
 
-  <!--------------- slick ---------->
+  <!--------------- swiper ---------->
 
-  <div class="single-item">
-    <div class="slick-slide-buy-now">
-      <img
-        srcset="/chocolate-team-hard-nut-5/assets/100g-mobile-1x-230615f9.png 1x, /chocolate-team-hard-nut-5/assets/100g-mobile-2x-fe3094cb.png 2x"
-        src="/chocolate-team-hard-nut-5/assets/100g-mobile-1x-230615f9.png"
-        alt="chocolate"
-        class="slick-img-buy-now"
-      />
-      <p class="slick-text-buy-now">100 g</p>
-    </div>
-    <div class="slick-slide-buy-now">
-      <img
-        srcset="/chocolate-team-hard-nut-5/assets/200g-mobile-1x-32fc45dd.png 1x, /chocolate-team-hard-nut-5/assets/200g-mobile-2x-bc7dda1c.png 2x"
-        src="/chocolate-team-hard-nut-5/assets/200g-mobile-1x-32fc45dd.png"
-        alt="chocolate"
-        class="slick-img-buy-now"
-      />
-      <p class="swiper-text-buy-now">200 g</p>
-    </div>
-    <div class="slick-slide-buy-now">
-      <img
-        srcset="/chocolate-team-hard-nut-5/assets/300g-mobile-1x-6ec2d378.png 1x, /chocolate-team-hard-nut-5/assets/300g-mobile-2x-1df0c28f.png 2x"
-        src="/chocolate-team-hard-nut-5/assets/300g-mobile-1x-6ec2d378.png"
-        alt="chocolate"
-        class="slick-img-buy-now"
-      />
-      <p class="slick-text-buy-now">300 g</p>
-    </div>
+  <div class="swiper swiper-buy-now">
+    <!-- Additional required wrapper -->
+    <ul class="swiper-wrapper">
+      <!-- Slides -->
+      <li class="swiper-slide swiper-slide-buy-now">
+        <img
+          srcset="/chocolate-team-hard-nut-5/assets/100g-mobile-1x-230615f9.png 1x, /chocolate-team-hard-nut-5/assets/100g-mobile-2x-fe3094cb.png 2x"
+          src="/chocolate-team-hard-nut-5/assets/100g-mobile-1x-230615f9.png"
+          alt="chocolate"
+          class="swiper-img-buy-now"
+        />
+        <p class="swiper-text-buy-now">100 g</p>
+      </li>
+      <li class="swiper-slide swiper-slide-buy-now">
+        <img
+          srcset="/chocolate-team-hard-nut-5/assets/200g-mobile-1x-32fc45dd.png 1x, /chocolate-team-hard-nut-5/assets/200g-mobile-2x-bc7dda1c.png 2x"
+          src="/chocolate-team-hard-nut-5/assets/200g-mobile-1x-32fc45dd.png"
+          alt="chocolate"
+          class="swiper-img-buy-now"
+        />
+        <p class="swiper-text-buy-now">200 g</p>
+      </li>
+      <li class="swiper-slide swiper-slide-buy-now">
+        <img
+          srcset="/chocolate-team-hard-nut-5/assets/300g-mobile-1x-6ec2d378.png 1x, /chocolate-team-hard-nut-5/assets/300g-mobile-2x-1df0c28f.png 2x"
+          src="/chocolate-team-hard-nut-5/assets/300g-mobile-1x-6ec2d378.png"
+          alt="chocolate"
+          class="swiper-img-buy-now"
+        />
+        <p class="swiper-text-buy-now">300 g</p>
+      </li>
+    </ul>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
   </div>
 
   <!----------- tablet and desktop img --------->
 
   <ul class="buy-now-img-wrap">
-    <li class="slick-slide-buy-now">
-      <img
-        srcset="/chocolate-team-hard-nut-5/assets/100g-tablet-1x-051e51b4.png 1x, /chocolate-team-hard-nut-5/assets/100g-tablet-2x-0d34d7f0.png 2x"
-        src="/chocolate-team-hard-nut-5/assets/100g-tablet-1x-051e51b4.png"
-        alt="chocolate"
-        class="slick-img-buy-now"
+    <label class="radio-box">
+      <input
+        class="choise-weight-radio"
+        type="radio"
+        name="choise-weight"
+        value="100g"
+        checked
       />
-      <p class="slick-text-buy-now">100 g</p>
-    </li>
-    <li class="slick-slide-buy-now">
-      <img
-        srcset="/chocolate-team-hard-nut-5/assets/200g-tablet-1x-721f2193.png 1x, /chocolate-team-hard-nut-5/assets/200g-tablet-2x-cf3136e0.png 2x"
-        src="/chocolate-team-hard-nut-5/assets/200g-tablet-1x-721f2193.png"
-        alt="chocolate"
-        class="slick-img-buy-now"
+      <div class="swiper-slide-buy-now">
+        <img
+          srcset="/chocolate-team-hard-nut-5/assets/100g-tablet-1x-051e51b4.png 1x, /chocolate-team-hard-nut-5/assets/100g-tablet-2x-0d34d7f0.png 2x"
+          src="/chocolate-team-hard-nut-5/assets/100g-tablet-1x-051e51b4.png"
+          alt="chocolate"
+          class="swiper-img-buy-now"
+        />
+        <p class="swiper-text-buy-now">100 g</p>
+      </div>
+    </label>
+    <label class="radio-box">
+      <input
+        class="choise-weight-radio"
+        type="radio"
+        name="choise-weight"
+        value="200g"
       />
-      <p class="slick-text-buy-now">200 g</p>
-    </li>
-    <li class="slick-slide-buy-now">
-      <img
-        srcset="/chocolate-team-hard-nut-5/assets/300g-tablet-1x-f108ee24.png 1x, /chocolate-team-hard-nut-5/assets/300g-tablet-2x-80b00c44.png 2x"
-        src="/chocolate-team-hard-nut-5/assets/300g-tablet-1x-f108ee24.png"
-        alt="chocolate"
-        class="slick-img-buy-now"
+      <div class="swiper-slide-buy-now">
+        <img
+          srcset="/chocolate-team-hard-nut-5/assets/200g-tablet-1x-721f2193.png 1x, /chocolate-team-hard-nut-5/assets/200g-tablet-2x-cf3136e0.png 2x"
+          src="/chocolate-team-hard-nut-5/assets/200g-tablet-1x-721f2193.png"
+          alt="chocolate"
+          class="swiper-img-buy-now"
+        />
+        <p class="swiper-text-buy-now">200 g</p>
+      </div>
+    </label>
+    <label class="radio-box">
+      <input
+        class="choise-weight-radio"
+        type="radio"
+        name="choise-weight"
+        value="300g"
       />
-      <p class="slick-text-buy-now">300 g</p>
-    </li>
+      <div class="swiper-slide-buy-now">
+        <img
+          srcset="/chocolate-team-hard-nut-5/assets/300g-tablet-1x-f108ee24.png 1x, /chocolate-team-hard-nut-5/assets/300g-tablet-2x-80b00c44.png 2x"
+          src="/chocolate-team-hard-nut-5/assets/300g-tablet-1x-f108ee24.png"
+          alt="chocolate"
+          class="swiper-img-buy-now"
+        />
+        <p class="swiper-text-buy-now">300 g</p>
+      </div>
+    </label>
   </ul>
 
   <!---------- form  --------->
@@ -1113,20 +1132,6 @@ for your feedback!</h1>
     
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     
-    <!-- slick  -->
-    <script
-      type="text/javascript"
-      src="//code.jquery.com/jquery-1.11.0.min.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
-    ></script>
-    <script src="./slick-buy-now.js"></script>
-    <!-- slick  -->
+    
   </body>
 </html>
