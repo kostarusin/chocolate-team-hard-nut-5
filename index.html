@@ -21,8 +21,8 @@
     />
 
     
-    <script type="module" crossorigin src="/chocolate-team-hard-nut-5/assets/index-46eabc0c.js"></script>
-    <link rel="stylesheet" href="/chocolate-team-hard-nut-5/assets/index-ec7074e6.css">
+    <script type="module" crossorigin src="/chocolate-team-hard-nut-5/assets/index-725fd6c6.js"></script>
+    <link rel="stylesheet" href="/chocolate-team-hard-nut-5/assets/index-2bfd8818.css">
   </head>
   <body>
     <header class="page-header">
@@ -827,47 +827,72 @@
   </button>
   <h2 class="modal-title"><span class="title-accent">BUY</span> NOW</h2>
 
-  <!--------------- swiper ---------->
+  <!---------- swiper ---------->
 
-  <div class="swiper swiper-buy-now">
-    <!-- Additional required wrapper -->
-    <ul class="swiper-wrapper">
-      <!-- Slides -->
-      <li class="swiper-slide swiper-slide-buy-now">
+  <div class="swiper-slide swiper-slide-buy-now">
+    <img
+      srcset="/chocolate-team-hard-nut-5/assets/100g-mobile-1x-230615f9.png 1x, /chocolate-team-hard-nut-5/assets/100g-mobile-2x-fe3094cb.png 2x"
+      src="/chocolate-team-hard-nut-5/assets/100g-mobile-1x-230615f9.png"
+      alt="chocolate"
+      class="swiper-img-buy-now"
+    />
+    <p class="swiper-text-buy-now">100 g</p>
+  </div>
+
+  <ul class="dots-box-buy-now">
+    <li class="dots-buy-now dots-buy-now-activ"></li>
+    <li class="dots-buy-now"></li>
+    <li class="dots-buy-now"></li>
+  </ul>
+
+  <!-- <div class="swiper swiper-buy-now">
+    
+    <div class="swiper-wrapper">
+      
+      <div class="swiper-slide swiper-slide-buy-now">
         <img
-          srcset="/chocolate-team-hard-nut-5/assets/100g-mobile-1x-230615f9.png 1x, /chocolate-team-hard-nut-5/assets/100g-mobile-2x-fe3094cb.png 2x"
-          src="/chocolate-team-hard-nut-5/assets/100g-mobile-1x-230615f9.png"
+          srcset="
+            /img/modal-buy-now/100g-mobile-1x.png 1x,
+            /img/modal-buy-now/100g-mobile-2x.png 2x
+          "
+          src="/img/modal-buy-now/100g-mobile-1x.png"
           alt="chocolate"
           class="swiper-img-buy-now"
         />
         <p class="swiper-text-buy-now">100 g</p>
-      </li>
-      <li class="swiper-slide swiper-slide-buy-now">
+      </div>
+      <div class="swiper-slide swiper-slide-buy-now">
         <img
-          srcset="/chocolate-team-hard-nut-5/assets/200g-mobile-1x-32fc45dd.png 1x, /chocolate-team-hard-nut-5/assets/200g-mobile-2x-bc7dda1c.png 2x"
-          src="/chocolate-team-hard-nut-5/assets/200g-mobile-1x-32fc45dd.png"
+          srcset="
+            /img/modal-buy-now/200g-mobile-1x.png 1x,
+            /img/modal-buy-now/200g-mobile-2x.png 2x
+          "
+          src="/img/modal-buy-now/200g-mobile-1x.png"
           alt="chocolate"
           class="swiper-img-buy-now"
         />
         <p class="swiper-text-buy-now">200 g</p>
-      </li>
-      <li class="swiper-slide swiper-slide-buy-now">
+      </div>
+      <div class="swiper-slide swiper-slide-buy-now">
         <img
-          srcset="/chocolate-team-hard-nut-5/assets/300g-mobile-1x-6ec2d378.png 1x, /chocolate-team-hard-nut-5/assets/300g-mobile-2x-1df0c28f.png 2x"
-          src="/chocolate-team-hard-nut-5/assets/300g-mobile-1x-6ec2d378.png"
+          srcset="
+            /img/modal-buy-now/300g-mobile-1x.png 1x,
+            /img/modal-buy-now/300g-mobile-2x.png 2x
+          "
+          src="/img/modal-buy-now/300g-mobile-1x.png"
           alt="chocolate"
           class="swiper-img-buy-now"
         />
         <p class="swiper-text-buy-now">300 g</p>
-      </li>
-    </ul>
-    <!-- If we need pagination -->
-    <div class="swiper-pagination swiper-pagination-buy-now"></div>
-  </div>
+      </div>
+    </div>
+    
+    <div class="swiper-pagination"></div>
+  </div> -->
 
   <!----------- tablet and desktop img --------->
 
-  <ul class="buy-now-img-wrap">
+  <div class="buy-now-img-wrap">
     <label class="radio-box">
       <input
         class="choise-weight-radio"
@@ -876,15 +901,15 @@
         value="100g"
         checked
       />
-      <div class="swiper-slide-buy-now">
+      <span class="swiper-slide-buy-now">
         <img
           srcset="/chocolate-team-hard-nut-5/assets/100g-tablet-1x-051e51b4.png 1x, /chocolate-team-hard-nut-5/assets/100g-tablet-2x-0d34d7f0.png 2x"
           src="/chocolate-team-hard-nut-5/assets/100g-tablet-1x-051e51b4.png"
           alt="chocolate"
           class="swiper-img-buy-now"
         />
-        <p class="swiper-text-buy-now">100 g</p>
-      </div>
+        <span class="swiper-text-buy-now">100 g</span>
+      </span>
     </label>
     <label class="radio-box">
       <input
@@ -893,15 +918,15 @@
         name="choise-weight"
         value="200g"
       />
-      <div class="swiper-slide-buy-now">
+      <span class="swiper-slide-buy-now">
         <img
           srcset="/chocolate-team-hard-nut-5/assets/200g-tablet-1x-721f2193.png 1x, /chocolate-team-hard-nut-5/assets/200g-tablet-2x-cf3136e0.png 2x"
           src="/chocolate-team-hard-nut-5/assets/200g-tablet-1x-721f2193.png"
           alt="chocolate"
           class="swiper-img-buy-now"
         />
-        <p class="swiper-text-buy-now">200 g</p>
-      </div>
+        <span class="swiper-text-buy-now">200 g</span>
+      </span>
     </label>
     <label class="radio-box">
       <input
@@ -910,17 +935,17 @@
         name="choise-weight"
         value="300g"
       />
-      <div class="swiper-slide-buy-now">
+      <span class="swiper-slide-buy-now">
         <img
           srcset="/chocolate-team-hard-nut-5/assets/300g-tablet-1x-f108ee24.png 1x, /chocolate-team-hard-nut-5/assets/300g-tablet-2x-80b00c44.png 2x"
           src="/chocolate-team-hard-nut-5/assets/300g-tablet-1x-f108ee24.png"
           alt="chocolate"
           class="swiper-img-buy-now"
         />
-        <p class="swiper-text-buy-now">300 g</p>
-      </div>
+        <span class="swiper-text-buy-now">300 g</span>
+      </span>
     </label>
-  </ul>
+  </div>
 
   <!---------- form  --------->
 
@@ -1009,9 +1034,7 @@
     </div>
   </form>
 
-  <button class="modal-submit-btn js-open-modal" data-modal="5" type="submit">
-    Submit
-  </button>
+  <button class="modal-submit-btn" type="submit">Submit</button>
 </div>
 
 <div class="overlay js-overlay-modal"></div>
@@ -1133,7 +1156,6 @@ for your feedback!</h1>
 
     
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-    
     
     <script src="./menu.js"></script>
   </body>
