@@ -34,7 +34,7 @@
   height: 100%;
   z-index: 100;
   background-color: var(--cards-background-color);
-  padding: 24px 32px;
+  padding: 20px 20px;
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
@@ -126,6 +126,9 @@
 @media (min-width: 768px) {
   .page-header {
     padding: 24px 0;
+  }
+  .header-menu {
+    padding: 24px 32px;
   }
   .site-nav-header {
     display: none;
