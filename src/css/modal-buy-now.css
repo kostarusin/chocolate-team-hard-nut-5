@@ -85,6 +85,26 @@
 
 /*------------- swiper ------------ */
 
+.dots-box-buy-now {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 13px;
+  margin-top: 14px;
+}
+.dots-buy-now {
+  width: 13px;
+  height: 13px;
+  background-color: rgba(17, 17, 17, 0.1);
+  border-radius: 13px;
+}
+.dots-buy-now-activ {
+  width: 28px;
+  height: 13px;
+  background-color: var(--text-color-accent);
+  border-radius: 13px;
+}
+
 .swiper-buy-now {
   max-width: 231px;
   height: 284px;
@@ -100,6 +120,7 @@
   align-items: center;
   justify-content: center;
   gap: 16px;
+  margin: 0 auto;
 
   width: 231px;
   height: 257px;
