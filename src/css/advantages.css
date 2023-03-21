@@ -4,6 +4,7 @@ background-color: var(--cards-background-color);
 padding-top: 29px;
 padding-bottom: 20px;
 /* width:100%; */
+max-width: 375px;
 
 }
 .advantages-item {
@@ -71,6 +72,7 @@ max-width: 308px;
     .advantages {
         margin-top: 12px;
         /* width: 375px; */
+        max-width: 768px;
         }
      .advantages-list{
         display: flex;
@@ -97,6 +99,7 @@ max-width: 308px;
         width: 768px;
         padding-top: 50px;
         padding-bottom: 50px;
+        max-width: 1200px;
     }
     .advantages-item {
         display: inline-block;
@@ -134,7 +137,7 @@ max-width: 308px;
     }
     .advantages {
          padding-left: 50px;
-         width: 1200px;
+         max-width: 1200px;
 
     }
 
