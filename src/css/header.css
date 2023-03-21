@@ -1,5 +1,9 @@
 .span-header {
+  padding-right: 4px;
   font-style: italic;
+}
+.logo-head-icon {
+  padding-left: 4px;
 }
 .page-header .container {
   display: flex;
@@ -30,7 +34,7 @@
   position: fixed;
   top: 0;
   right: 0;
-  width: 60%;
+  width: 232px;
   height: 100%;
   z-index: 100;
   background-color: var(--cards-background-color);
@@ -55,8 +59,8 @@
 .header-mob-close {
   margin-left: auto;
   margin-bottom: 100px;
-  width: 24px;
-  height: 24px;
+  width: 28px;
+  height: 28px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   display: flex;
@@ -86,7 +90,38 @@
   text-transform: capitalize;
   color: var(--text-color-blond);
 }
-
+.icon-social-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 18px;
+  border: none;
+  fill: var(--modal-title-color);
+  background-color: transparent;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.icon-social-header:is(:hover, :focus) {
+  fill: var(--text-color-accent);
+}
+.icon-soc-header {
+  width: 22px;
+  height: 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 18px;
+  border: none;
+  fill: var(--text-color-blond);
+  background-color: transparent;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.icon-soc-header:is(:hover, :focus) {
+  fill: var(--text-color-accent);
+}
 @media (max-width: 767px) {
   .page-header {
     padding: 20px 0 14px 0;
@@ -119,7 +154,7 @@
   height: 21px;
   } 
   .header-mob-nav {
-    margin-left: 30%;
+    padding-left: 30px;
   }
 }
 
@@ -128,6 +163,7 @@
     padding: 24px 0;
   }
   .header-menu {
+    width: 290px;
     padding: 24px 32px;
   }
   .site-nav-header {
@@ -161,7 +197,18 @@
     height: 32px;
   }
   .header-mob-nav {
-    margin-left: 40%;
+    padding-left: 53px;
+  }
+  .icon-soc-header {
+    width: 24px;
+    height: 24px;
+  }
+  .header-mob-close {
+    width: 32px;
+    height: 32px;
+  }
+  .header-mob-nav .link-current {
+    color: var(--text-color-accent);
   }
 }
 
@@ -243,21 +290,7 @@
   .header-soc-link:is(:hover, :focus) {
     color: var(--text-color-accent);
   }
-  .icon-social-header {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0px;
-    gap: 18px;
-    border: none;
-    fill: var(--modal-title-color);
-    background-color: transparent;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .icon-social-header:is(:hover, :focus) {
-    fill: var(--text-color-accent);
-  }
+  
   .header-menu {
     display: none;
   }
