@@ -4,10 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Simply Chocolate</title>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
-    />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
@@ -18,10 +15,14 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
 
     
-    <script type="module" crossorigin src="/chocolate-team-hard-nut-5/assets/index-6318cb6c.js"></script>
-    <link rel="stylesheet" href="/chocolate-team-hard-nut-5/assets/index-f8af51b8.css">
+    <script type="module" crossorigin src="/chocolate-team-hard-nut-5/assets/index-46eabc0c.js"></script>
+    <link rel="stylesheet" href="/chocolate-team-hard-nut-5/assets/index-53289b8b.css">
   </head>
   <body>
     <header class="page-header">
@@ -863,7 +864,7 @@
       </li>
     </ul>
     <!-- If we need pagination -->
-    <div class="swiper-pagination"></div>
+    <div class="swiper-pagination swiper-pagination-buy-now"></div>
   </div>
 
   <!----------- tablet and desktop img --------->
@@ -1010,45 +1011,47 @@
     </div>
   </form>
 
-  <button class="modal-submit-btn" type="submit" data-modal="5">Submit</button>
+  <button class="modal-submit-btn js-open-modal" data-modal="5" type="submit">
+    Submit
+  </button>
 </div>
 
 <div class="overlay js-overlay-modal"></div>
 
-    
+    <div class="modal-thank">
+  <button type="button" class="thank-button">
+    <svg class="svg-thank">
+      <use class="use-thank" href="/chocolate-team-hard-nut-5/assets/icons-e1c2f2d7.svg#icon-x-close"></use>
+    </svg>
+  </button>
 
-  <div class="modal-thank">
-    <button type="button" class="thank-button">
-<svg class="svg-thank">
-  <use class="use-thank" href="/chocolate-team-hard-nut-5/assets/icons-e1c2f2d7.svg#icon-x-close">
-  </use>
-</svg>
-    </button>
-
-    <div class="thank-text">
+  <div class="thank-text">
     <h1 class="thank-you-h">thank you!</h1>
-    <p class="thank-p">We are glad that you ordered our chocolate and we are giving you a 20% discount on all our products.</p>
-</div>
-
-  <picture >
- <source
-  media="(min-width:1200px)"
-  srcset="/chocolate-team-hard-nut-5/assets/chocolate-desktop-7ac32a70.png 1x, /chocolate-team-hard-nut-5/assets/chocolate-desktop-2-6b2f8896.png 2x"
- />
- <source
-  media="(min-width:768px)"
-  srcset="/chocolate-team-hard-nut-5/assets/chocolate-desktop-7ac32a70.png 1x, /chocolate-team-hard-nut-5/assets/chocolate-desktop-2-6b2f8896.png 2x"
- />
- <img class="thank-picture"
-  srcset="/chocolate-team-hard-nut-5/assets/chocolate-mobile-a0afc2a6.png 1x, /chocolate-team-hard-nut-5/assets/chocolate-mobile-2-a99eadc8.png 2x"
-  src="/chocolate-team-hard-nut-5/assets/chocolate-mobile-a0afc2a6.png"
-  width=“280”
-  alt="image"
-  loading="lazy"
- />
-</picture>
-
+    <p class="thank-p">
+      We are glad that you ordered our chocolate and we are giving you a 20%
+      discount on all our products.
+    </p>
   </div>
+
+  <picture>
+    <source
+      media="(min-width:1200px)"
+      srcset="/chocolate-team-hard-nut-5/assets/chocolate-desktop-7ac32a70.png 1x, /chocolate-team-hard-nut-5/assets/chocolate-desktop-2-6b2f8896.png 2x"
+    />
+    <source
+      media="(min-width:768px)"
+      srcset="/chocolate-team-hard-nut-5/assets/chocolate-desktop-7ac32a70.png 1x, /chocolate-team-hard-nut-5/assets/chocolate-desktop-2-6b2f8896.png 2x"
+    />
+    <img
+      class="thank-picture"
+      srcset="/chocolate-team-hard-nut-5/assets/chocolate-mobile-a0afc2a6.png 1x, /chocolate-team-hard-nut-5/assets/chocolate-mobile-2-a99eadc8.png 2x"
+      src="/chocolate-team-hard-nut-5/assets/chocolate-mobile-a0afc2a6.png"
+      width="“280”"
+      alt="image"
+      loading="lazy"
+    />
+  </picture>
+</div>
 
     
 
