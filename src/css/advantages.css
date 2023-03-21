@@ -10,7 +10,7 @@ padding-bottom: 20px;
 position: relative;
 /* display: inline-block; */
 margin-top: 20px;
-width: 308px;
+max-width: 308px;
 height: 243px;
 
 }
@@ -31,7 +31,7 @@ stroke: rgba(255, 255, 255, 0.5);
      
 }
 .advantages-item-icons{
-width: 308px;
+max-width: 308px;
 height: 226px;
 display: contents;
 }
