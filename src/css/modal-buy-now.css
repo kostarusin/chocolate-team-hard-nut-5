@@ -83,20 +83,22 @@
 
 /*------------- swiper ------------ */
 
-.single-item {
+.swiper-buy-now {
   max-width: 231px;
   height: 284px;
-  margin: 0 auto;
 }
-.slick-initialized .slick-slide {
+
+.swiper-wrapper {
+  list-style: none;
+}
+
+.swiper-slide-buy-now {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 16px;
-}
 
-.slick-slide-buy-now {
   width: 231px;
   height: 257px;
   background: var(--text-color-blond);
@@ -104,19 +106,17 @@
   border-radius: 15px;
 }
 
-.slick-img-buy-now {
-  display: block;
+.swiper-img-buy-now {
   width: 167px;
   height: 148px;
 }
 
-.slick-text-buy-now {
+.swiper-text-buy-now {
+  color: var(--modal-title-color);
   font-weight: 600;
   font-size: 14px;
   line-height: calc(17 / 14);
   text-align: center;
-  color: var(--modal-title-color);
-
   padding: 7px 26px;
 
   width: 96px;
@@ -126,29 +126,7 @@
   border-radius: 100px;
 }
 
-.slick-dots {
-  bottom: -6px;
-}
-
-.slick-dots li button:before {
-  content: '';
-  width: 13px;
-  height: 13px;
-  background-color: rgba(17, 17, 17, 0.1);
-  border-radius: 50%;
-  opacity: 1;
-}
-
-.slick-dots li.slick-active button:before {
-  left: -8px;
-  width: 28px;
-  height: 13px;
-  background-color: var(--text-color-accent);
-  border-radius: 13px;
-  opacity: 1;
-}
-
-/* .swiper-horizontal > .swiper-pagination-bullets,
+.swiper-horizontal > .swiper-pagination-bullets,
 .swiper-pagination-bullets.swiper-pagination-horizontal {
   bottom: var(--swiper-pagination-bottom, -2px);
 }
@@ -164,7 +142,7 @@
   height: 13px;
   background-color: var(--text-color-accent);
   border-radius: 13px;
-} */
+}
 
 /* ------------- form ------------ */
 .modal-form {
@@ -274,7 +252,7 @@
 }
 
 @media screen and (min-width: 768px) {
-  .single-item {
+  .swiper-buy-now {
     display: none;
   }
 
@@ -296,7 +274,7 @@
     gap: 16px;
     list-style: none;
   }
-  .slick-slide-buy-now {
+  .swiper-slide-buy-now {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -306,10 +284,35 @@
     gap: 14px;
   }
 
-  .slick-img-buy-now {
+  .swiper-img-buy-now {
     width: 120px;
     height: 107px;
   }
+
+  .radio-box {
+    width: 160px;
+    height: 196px;
+    gap: 14px;
+
+    border-radius: 15px;
+  }
+
+  .choise-weight-radio {
+    display: none;
+  }
+
+  .radio-box:hover {
+    cursor: pointer;
+    box-shadow: 0 0 6px -1px var(--text-color-accent);
+  }
+
+  .choise-weight-radio:checked + .swiper-slide-buy-now .swiper-text-buy-now {
+    background-color: var(--text-color-accent);
+    color: var(--text-color-blond);
+  }
+
+  /* -------form------  */
+
   .modal-form {
     margin: 40px auto 0 auto;
   }
