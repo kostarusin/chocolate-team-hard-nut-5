@@ -23,7 +23,7 @@ const swiper = new Swiper('.swiper', {
     // when window width is >= 320px
     320: {
       slidesPerView: 1,
-      spaceBetween: 18
+      spaceBetween: 18,
     },
     // when window width is >= 768px
     768: {
@@ -32,6 +32,6 @@ const swiper = new Swiper('.swiper', {
     // when window width is >= 1200px
     1200: {
       slidesPerView: 4,
-    }
-  }
+    },
+  },
 });
