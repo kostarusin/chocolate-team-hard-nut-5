@@ -2,15 +2,6 @@
   display: none;
 }
 
-.modal {
-  opacity: 0;
-  visibility: hidden;
-
-  z-index: 30;
-
-  transition: 0.3s all;
-}
-
 .overlay {
   opacity: 0;
   visibility: hidden;
@@ -25,6 +16,15 @@
   transition: 0.3s all;
 }
 
+.modal {
+  opacity: 0;
+  visibility: hidden;
+
+  z-index: 30;
+
+  transition: 0.3s all;
+}
+
 .modal.active,
 .overlay.active {
   opacity: 1;
@@ -32,14 +32,16 @@
 }
 
 .modal-buy-now {
-  position: absolute;
+  position: fixed;
   top: 20px;
   left: 50%;
   transform: translate(-50%, 0);
 
   width: 100%;
   max-width: 311px;
-  height: 1007px;
+  max-height: 95vh;
+  overflow: hidden auto;
+
   padding: 32px 24px;
   border-radius: 15px;
 
