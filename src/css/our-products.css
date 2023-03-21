@@ -86,9 +86,11 @@
     .section-title {
         font-size: 20px;
         line-height: 1.2;
-        margin-bottom: 32px;
-        margin-top: 72px;
+        margin-bottom: 32px;      
     }     
+    .container.our-products{
+        padding-top: 72px;
+    }
 }
 
 @media (min-width: 768px) {
@@ -100,13 +102,17 @@
         font-size: 24px;
         line-height: 1.17;
         margin-bottom: 50px;
-        margin-top: 100px;
     }   
+    .container.our-products {
+        padding-top: 100px;
+    }
 }
 
 @media (min-width: 1200px) {
     .section-title {
         margin-bottom: 50px;
-        margin-top: 128px;
     } 
+    .container.our-products {
+        padding-top: 128px;
+    }
 }
