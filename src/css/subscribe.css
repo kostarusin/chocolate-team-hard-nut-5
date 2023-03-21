@@ -56,7 +56,7 @@
 .button-subcribe:hover,
 .button-subcribe:focus {
   color: var(--text-color-accent);
-  background: #fcf1e0;
+  background: var(--modal-active-btn);
 }
 /* Mobile 372 */
 @media screen and (min-width: 372px) {
