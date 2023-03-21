@@ -33,9 +33,9 @@
 
 .modal-buy-now {
   position: fixed;
-  top: 50%;
+  top: 20px;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, 0);
 
   width: 100%;
   max-width: 311px;
@@ -262,6 +262,7 @@
     position: absolute;
     max-width: 100%;
     width: 609px;
+    height: 1058px;
     padding: 48px;
   }
   .modal-title {
