@@ -1,76 +1,163 @@
-/*  */
+.header-menu {
+  /* (убрати після закінчення своєї роботи) */
+  display: none;
+}
 
 .reviews-title {
+  font-family: 'Montserrat';
+  font-style: normal;
   font-weight: 600;
-  font-size: 20px;
-  line-height: 1.2;
+  font-size: 24px;
+  line-height: 1.17;
   text-align: center;
   letter-spacing: -0.03em;
   text-transform: uppercase;
-  color: var(--modal-title-color);
+  margin-bottom: 74px;
 }
-.reviews-title-orange {
-  color: var(--text-color-accent);
+
+.chocolate-color {
+  color: #fd9222;
 }
-.reviews {
+.reviews-list {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
 }
 .reviews-item {
+  margin-bottom: 94px;
+}
+
+.card2,
+.card3 {
+  display: none;
+}
+
+.reviews-card {
   position: relative;
-  max-width: 335px;
-  max-height: 200px;
-  width: 100%;
-  height: 100%;
-  padding: 56px 18px 42px 18px;
-  background: #ffffff;
+  box-sizing: border-box;
+  height: 200px;
+  left: 0px;
+  top: 42px;
+  background: var(--text-color-blond);
   border: 1px solid rgba(17, 17, 17, 0.1);
   box-shadow: 0px 9.04932px 26.5717px rgba(215, 228, 249, 0.25);
   border-radius: 15px;
-  margin-top: 72px;
 }
 
-.reviews-name {
+.team-img {
+  position: absolute;
+  transform: translate(160%, 0%);
+  border-radius: 15px;
+  z-index: 1;
+}
+
+.reviews-subtitle {
   font-weight: 600;
   font-size: 18px;
   line-height: 1.33;
   text-align: center;
+  padding-top: 56px;
   margin-bottom: 24px;
-  color: var(--modal-title-color);
 }
+
 .reviews-text {
+  padding: 0 24px;
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.29;
   text-align: center;
   letter-spacing: -0.02em;
-
   color: rgba(17, 17, 17, 0.7);
 }
-.reviews-pic {
-  position: absolute;
-  top: -20%;
-  left: 37%;
-  width: 80px;
-  height: 80px;
+
+.reviews-btn {
+  margin: 0 auto;
+  margin-bottom: 100px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  width: 222px;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 14px 40px;
+  gap: 14px;
+  border: 1px solid var(--text-color-accent);
+  border-radius: 100px;
+  background-color: transparent;
 }
-/* .swiper-pagination-style {
-  margin-top: 90px;
-} */
-/* .swiper {
-  width: 600px;
-  height: 300px;
-} */
+
+/* Слайдер */
+a {
+  text-decoration: none;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+.wrapper {
+  padding: 30px;
+  min-height: 100%;
+}
+
+.image-slider {
+  padding: 30px 0 70px 0;
+}
+
+.image-slider__image img {
+  max-width: 100%;
+}
+
 @media (min-width: 375px) {
 }
+
 @media (min-width: 768px) {
+  .reviews-title {
+    margin-bottom: 91px;
+  }
+
+  .reviews-list {
+    flex-wrap: wrap;
+  }
+
+  .card2 {
+    display: list-item;
+  }
+
+  .reviews-item {
+    width: calc((100% - 16px) / 2);
+    margin-right: 16px;
+  }
+
+  .reviews-item:nth-child(2n) {
+    margin-right: 0;
+  }
 }
 
 @media (min-width: 1200px) {
-}
+  .card3 {
+    display: list-item;
+  }
 
-/* .modal-thank {
-  display: none;
-} */
-.reviews {
-  display: none;
+  .reviews-item {
+    width: calc((100% - 32px) / 3);
+    margin-right: 16px;
+  }
+
+  .reviews-item:nth-child(2n) {
+    margin-right: 16px;
+  }
+  .reviews-item:nth-child(3n) {
+    margin-right: 0;
+  }
 }
