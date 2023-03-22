@@ -193,9 +193,7 @@
       ),
       url(/img/hero/hero-tablet1x.jpg);
     display: flex-box;
-    padding-left: 32px;
-    padding-right: 32px;
-    margin-bottom: 72px;
+    padding: 671px 40px 40px;
   }
 
   .hero-button {
