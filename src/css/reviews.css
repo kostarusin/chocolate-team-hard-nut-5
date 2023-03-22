@@ -91,6 +91,11 @@
   background-color: transparent;
 }
 
+.reviews-btn:is(:focus, :hover) {
+  color: var(--text-color-blond);
+  background-color: var(--accent-color);
+}
+
 /* Слайдер */
 a {
   text-decoration: none;

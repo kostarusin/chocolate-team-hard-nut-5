@@ -35,6 +35,7 @@
   --modal-border-box-color: rgba(17, 17, 17, 0.05);
   --modal-tel-prefix: #000000;
   --modal-active-btn: #fcf1e0;
+  --accent-color: #fd9222;
 }
 
 .container {
