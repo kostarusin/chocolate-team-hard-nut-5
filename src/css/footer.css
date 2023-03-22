@@ -156,7 +156,7 @@
 
 @media (min-width: 768px) {
   .footer {
-    width: var(--container-width);
+    /* width: var(--container-width); */
 
     padding-top: 50px;
     padding-bottom: 50px;
