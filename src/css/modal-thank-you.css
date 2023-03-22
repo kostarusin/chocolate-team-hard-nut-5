@@ -33,9 +33,9 @@
 
 .modal-thank {
   background-color: var(--text-color-accent);
-  position: fixed;
+  /* position: fixed;
   top: 10%;
-  left: 15%;
+  left: 15%; */
   max-width: 311px;
   max-height: 350px;
   border-radius: 15px;
