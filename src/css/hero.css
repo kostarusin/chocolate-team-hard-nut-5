@@ -8,7 +8,7 @@
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: -0.03em;
-  color: #ffffff;
+  color: var(--text-color-blond);
   margin-bottom: 32px;
 }
 .hero-box {
@@ -46,10 +46,11 @@
   margin-bottom: 32px;
 }
 .btn-buy {
+  font-family: inherit;
   font-weight: 600;
   font-size: 14px;
-  line-height: 17px;
-  color: #ffffff;
+  line-height: calc(17 / 14);
+  color: var(--text-color-blond);
   background: #fd9222;
   margin-right: 10px;
   margin-bottom: 10px;
@@ -64,10 +65,11 @@
   background-color: #fcf1e0;
 }
 .btn-made {
+  font-family: inherit;
   font-weight: 600;
   font-size: 14px;
-  line-height: 17px;
-  color: #ffffff;
+  line-height: calc(17 / 14);
+  color: var(--text-color-blond);
   background-color: transparent;
   border: 1px solid #ffffff;
   transition-property: color;
@@ -88,9 +90,9 @@
 .hero-scroll-link {
   font-weight: 500;
   font-size: 12px;
-  line-height: 14px;
+  line-height: calc(14 / 12);
   letter-spacing: -0.03em;
-  color: #ffffff;
+  color: var(--text-color-blond);
   transition-property: color;
   transition-duration: 0.37s;
 }
@@ -127,6 +129,8 @@
   }
   .hero-title {
     font-size: 28px;
+    line-height: calc(34 / 28);
+    letter-spacing: -0.03em;
   }
   .hero-box {
     max-width: 704px;
@@ -169,7 +173,7 @@
 
   .hero-scroll-link {
     font-size: 14px;
-    line-height: 18px;
+    line-height: calc(18 / 14);
   }
 
   .btn-scroll {
