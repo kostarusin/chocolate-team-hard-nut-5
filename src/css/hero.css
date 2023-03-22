@@ -57,6 +57,7 @@
   transition-duration: 250ms;
   padding: 12px 27px;
   border-radius: 100px;
+  border: none;
 }
 .btn-buy:is(:focus, :hover) {
   color: #fd9222;
@@ -83,6 +84,7 @@
   align-items: center;
   gap: 12px;
 }
+
 .hero-scroll-link {
   font-weight: 500;
   font-size: 12px;
@@ -104,6 +106,7 @@
   height: 22px;
   padding: 0;
   fill: #fd9222;
+  border: none;
 }
 .btn-scroll-icon {
   padding: 9px;
