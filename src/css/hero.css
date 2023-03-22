@@ -1,3 +1,7 @@
+.hero-container {
+  padding-bottom: 72px;
+}
+
 .hero-box {
   background-image: linear-gradient(
       180deg,
