@@ -1,4 +1,4 @@
-/* modal review */
+/* 
 
 .modal {
   opacity: 0;
@@ -60,7 +60,6 @@
   border: 1.5px solid var(--modal-border-box-color);
   filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
   border-radius: 8px;
-  /* outline: none; */
   padding: 14px 18px;
   background: var(--main-background-color);
 }
@@ -185,4 +184,4 @@
     width: 117px;
     margin-top: -1px;
   }
-}
+} */

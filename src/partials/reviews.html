@@ -66,7 +66,78 @@
         </div>
       </li>
     </ul>
-    <!-- </div> -->
-    <button class="reviews-btn" type="button">Leave a review</button>
+    <!-- reviews btn -->
+    <button class="reviews-btn js-open-modal" data-modal="3" type="button">
+      Leave a review
+    </button>
+    <div class="modal modal-review" data-modal="3">
+      <svg class="modal-cross js-modal-close">
+        <use href="/img/icons.svg#icon-x-close"></use>
+      </svg>
+      <h2 class="modal-review-title">
+        leave a review about
+        <span class="modal-review-title-orange">our chocolate</span>
+      </h2>
+      <form class="modal-review-form">
+        <label>
+          <input
+            type="text"
+            name="name"
+            class="modal-review-input"
+            placeholder="Name"
+            required
+            pattern="^[a-zA-Z]+$"
+            title="Only letters have to be used"
+        /></label>
+        <label>
+          <input
+            type="email"
+            name="email"
+            class="modal-review-input"
+            placeholder="Enter your email"
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+            title="Please type correct email address"
+            required
+        /></label>
+        <div class="modal-review-input-wrap">
+          <label>
+            <input
+              type="tel"
+              name="tel"
+              class="modal-review-input modal-review-input-tel"
+              placeholder="Phone number"
+              pattern="[0-9]{9}"
+              required
+          /></label>
+          <div class="modal-review-country-code">
+            <svg class="modal-review-flag">
+              <use href="/img/icons.svg#icon-flag"></use>
+            </svg>
+            <span class="modal-review-prefix">+380</span>
+          </div>
+        </div>
+        <label class="label-title">
+          <textarea
+            name="comment"
+            class="modal-review-input"
+            placeholder="Enter text"
+          ></textarea>
+        </label>
+        <button
+          class="modal-review-btn-send js-modal-close js-open-modal"
+          data-modal="5"
+          type="submit"
+        >
+          Send
+        </button>
+        <!-- <button
+          class="modal-review-btn-send js-open-modal"
+          data-modal="5"
+          type="submit"
+        >
+          open thank
+        </button> -->
+      </form>
+    </div>
   </div>
 </section>
