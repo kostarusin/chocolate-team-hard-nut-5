@@ -22,7 +22,7 @@
 
     
     <script type="module" crossorigin src="/chocolate-team-hard-nut-5/assets/index-cf7db796.js"></script>
-    <link rel="stylesheet" href="/chocolate-team-hard-nut-5/assets/index-720982ce.css">
+    <link rel="stylesheet" href="/chocolate-team-hard-nut-5/assets/index-10c46e44.css">
   </head>
   <body>
     <header class="page-header">
@@ -136,33 +136,47 @@
 
 
 
-    <section class="hero">
-  <div class="container hero-container">
+    <!-- Hero -->
+<section class="hero">
+  <div class="container">
     <div class="hero-box">
-      <h1 class="visually-hidden">the most delicious chocolate</h1>
+      <h1 class="visually-hidden">SIMPLY CHOCOLATE</h1>
       <h2 class="hero-title">
-        <a id="hero"></a> Treat yourself or a loved one to our finest
-        ingredients for a moment of pure delight!
+        Treat yourself or a loved one to our finest ingredients for a moment of
+        pure delight!
       </h2>
-      <div class="hero-tablet">
-        <div class="hero-button">
-          <button type="button" class="btn js-open-modal" data-modal="2">
+      <div class="hero-btn-wrap">
+        <div class="hero-btn">
+          <button class="btn-buy js-open-modal" data-modal="2" type="button">
             Buy now
           </button>
-          <a href="#how-made" target="_blank" class="btn2">How it's made</a>
+          <button class="btn-made" type="button">
+            <a href="#how-made">How it’s made</a>
+          </button>
         </div>
-        <div class="h-scroll">
-          <p class="hero-scroll">scroll down</p>
-          <a href="#footer"
-            ><svg class="hero-icon" width="28" height="28">
+        <div class="hero-scroll">
+          <a href="#" onclick="scrollToFooter()" class="hero-scroll-link"
+            >scroll down</a
+          >
+          <button onclick="scrollToFooter()" class="btn-scroll" type="button">
+            <svg class="hero-icon" width="28" height="28">
               <use class="hero-svg" href="/chocolate-team-hard-nut-5/assets/icons-e1c2f2d7.svg#hero-vector"></use>
             </svg>
-          </a>
+          </button>
         </div>
       </div>
     </div>
   </div>
 </section>
+<!-- Scroll -->
+<script>
+  function scrollToFooter() {
+    window.scrollTo({
+      top: document.body.scrollHeight,
+      behavior: 'smooth',
+    });
+  }
+</script>
 
     <section class="advantages">
   <div class="container">
