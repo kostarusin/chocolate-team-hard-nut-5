@@ -10,7 +10,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  padding-top: 395px;
+  padding: 395px 20px 20px 20px;
 }
 
 .hero-image-container {
