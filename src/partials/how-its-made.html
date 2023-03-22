@@ -1,40 +1,91 @@
+<!-- How its made -->
+<section id="how-made" class="how-made">
+  <div class="container">
+    <h2 class="how-made-title">
+      hOW IT’S<span class="active-color"> made?</span>
+    </h2>
+    <div class="hov-made-box">
+      <div class="how-made-video">
+        <!-- Photo Video Wrap -->
+        <picture>
+          <source
+            srcset="
+              ./img/how-its-made/play-img-desktop.jpg 1x,
+              ./img/how-its-made/play-img-desktop.jpg 2x
+            "
+            media="(min-width:1200px)"
+            width="600"
+          />
+          <source
+            srcset="
+              ./img/how-its-made/play-img-tablet.jpg 1x,
+              ./img/how-its-made/play-img-tablet.jpg 2x
+            "
+            media="(min-width: 768px)"
+            width="614"
+          />
+          <source
+            srcset="
+              ./img/how-its-made/play-img.jpg 1x,
+              ./img/how-its-made/play-img.jpg 2x
+            "
+            media="(min-width:375px)"
+          />
 
-
-
-<section id='how-made' class="container made">
-  <h2 class="how-made">hOW IT’S <span class="accent">made?</span></h2>
-    <div class="two-made">
-        <div class="background-made">
-          <button type="button" class="made-button">
-
-<svg class="svg-made" fill="white" width="35" height="35">
-  <use href="/img/icons.svg#icon-play"></use>
-</svg></button>
-        </div>
-
-        <div class="chocolate-made-div">
-          <p class="chocolate-made">
-            Try our chocolates today and discover the perfect balance of flavor
-          </p>
-          <ul class="made-list">
-            <li>
-              Heat the milk in a saucepan without bringing it to a boil. Add
-              sugar and cocoa powder.
-            </li>
-            <li>
-              At the same time, prepare a water bath. Melt the butter on it.
-            </li>
-            <li>
-              "Mix" the milk mixture and already liquid butter. Mix thoroughly
-              with a silicone spatula so that the mass becomes uniform and
-              silky.
-            </li>
-            <li>Heat the mixture over low heat, letting it barely boil.</li>
-            <li class="made-hide">
-              Pour the chocolate into special containers (can be replaced with
-              ice molds). Allow to cool and harden.
-            </li>
-          </ul>
-        </div>
+          <img
+            class="how-made-img"
+            src="./img/how-its-made/play-img.jpg"
+            alt="play-video"
+            width="335"
+          />
+        </picture>
+        <!-- Video -->
+        <iframe
+          class="myvideo"
+          id="myvideo"
+          src="https://www.youtube-nocookie.com/embed/s0EbAUGftug?controls=0"
+        ></iframe>
+        <!-- Button Video -->
+        <button onclick="playVideo()" class="video-btn" type="button">
+          <svg class="icon-play-video" width="35" height="35">
+            <use href="./img/icons.svg#icon-play"></use>
+          </svg>
+        </button>
       </div>
-    </section>
+
+      <div class="how-made-wrap">
+        <p class="how-made-text">
+          Try our chocolates today and discover the perfect balance of flavor
+        </p>
+        <ul class="how-made-list">
+          <li class="how-made-item">
+            Heat the milk in a saucepan without bringing it to a boil. Add sugar
+            and cocoa powder.
+          </li>
+          <li class="how-made-item">
+            At the same time, prepare a water bath. Melt the butter on it.
+          </li>
+          <li class="how-made-item">
+            "Mix" the milk mixture and already liquid butter. Mix thoroughly
+            with a silicone spatula so that the mass becomes uniform and silky.
+          </li>
+          <li class="how-made-item">
+            Heat the mixture over low heat, letting it barely boil.
+          </li>
+          <li class="how-made-item">
+            Pour the chocolate into special containers (can be replaced with ice
+            molds). Allow to cool and harden.
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Video-iframe -->
+<script>
+  function playVideo() {
+    var video = document.getElementById('myvideo');
+    video.style.display = 'block';
+    video.src = 'https://www.youtube.com/embed/s0EbAUGftug?autoplay=1';
+  }
+</script>
