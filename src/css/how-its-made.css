@@ -1,173 +1,105 @@
-
-
-*{box-sizing: border-box;}
-
-.made {background-color:var(--main-background-color);
+/* How its made */
+.how-made {
   padding-top: 72px;
+}
+.how-made-title {
+  font-weight: 600;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+
+  color: #111111;
+  margin-bottom: 32px;
+}
+.how-made-video {
+  position: relative;
+  max-width: 614px;
+  margin: 0 auto;
+}
+.how-made-img {
+  border-radius: 15px;
+}
+
+.video-btn {
   display: flex;
-justify-content: center;
-    flex-direction: column}
-
-
-
-.how-made {font-family: montserrat;
-font-weight: 600;
-font-size: 24px;
-line-height: 1.17;
-text-align: center;
-letter-spacing: -0.03em;
-text-transform: uppercase;
-color: var(--modal-title-color);
-margin-bottom: 32px;}
-
-.accent{color: var(--text-color-accent);}
-
-
-.two-made{display: flex;
-    flex-direction: column;
-    align-content: center;
-    align-items: center;}
-
-.background-made{
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
-  background-image: url(/img/how-its-made/image.png);
-padding:233px 150px 232px 150px;
-background-repeat: no-repeat;
-    max-width: 335px;
-}
-
-.chocolate-made-div {background-color: var(--text-color-blond);border-radius: 15px; padding: 20px 14px 20px 30px; margin-top: 20px; max-width: 335px;}
-.chocolate-made {color: var(--modal-title-color);
-font-family: Montserrat;
-font-weight: 600;
-font-size: 18px;
-line-height: 1.33;
-margin-bottom: 20px;
-}
-.made-button {border:none;background-color: transparent;padding: 0; display: flex; justify-content: center;
-    align-items: center;}
-.made-list{
-display: flex;
-flex-direction: column;
-list-style: disc;
-color: var(--modal-title-color);
-font-family: Montserrat;
-font-weight: 400;
-font-size: 14px;
-line-height: 1.29;
-letter-spacing: -0.02em;
-gap: 18px;
-padding: 0 30px;}
-
-
-.svg-made{
-  border: 1px solid var(--text-color-blond);
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  border: 1px solid #ffffff;
   border-radius: 50%;
-stroke:var(--text-color-blond); fill:var(--text-color-blond);
-width: 35px;
-height: 35px;
+  width: 35px;
+  height: 35px;
+  padding: 0;
+  background-color: transparent;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.icon-play-video {
+  fill: #ffffff;
 }
 
+.myvideo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  z-index: 1;
+}
+.how-made-wrap {
+  margin-top: 20px;
+  padding: 20px 14px;
+  background: #ffffff;
+  border-radius: 15px;
+}
+.how-made-text {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.33;
+  color: #111111;
+  margin-bottom: 20px;
+}
+.how-made-list {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.how-made-item {
+  font-size: 14px;
+  line-height: 1.28;
+  letter-spacing: -0.02em;
 
-
+  color: #111111;
+  list-style: disc;
+  margin-bottom: 18px;
+}
+/* Media Tablet */
 @media (min-width: 768px) {
-    :root {
-      --container-width: 768px;
-    }
-    .container {
-      padding-left: 32px;
-      padding-right: 32px;}
-
-
-      .made {
-        padding-top: 100px;
-          display: flex;
-justify-content: center;
-    align-items: center;
-
-      }
-
-      .how-made {font-size: 24px; margin-bottom: 50px;}
-
-.svg-made{
-position: absolute;
-width: 44px;
-height: 44px;
-}
-
-.two-made{display: flex;
-    flex-direction: column;
-    align-content: center;
-    align-items: center;}
-      .background-made{
-        background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
-  background-image: url(/img/how-its-made/image2tablet.png);
-padding:200px 307px;
-background-repeat: no-repeat;
-}
-
-.chocolate-made-div {padding: 32px; margin-top: 20px;max-width: 614px;}
-
-
-.chocolate-made {
-margin-bottom: 28px;
-}
-
-    }
-
-
-    @media (min-width: 1200px) {
-  :root {
-    --container-width: 1200px;
+  .how-made {
+    padding-top: 100px;
   }
-
-  .made {
-        padding-top: 128px;
-          display: flex;
-justify-content: center;
-    align-items: center;
-
-      }
-
-      .how-made {font-size: 24px; margin-bottom: 50px;}
-
-      .two-made {display: flex; gap:20px; flex-direction: row;}
-
-
-      .background-made{
-        background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
-  background-image: url(/img/how-its-made/image2desktop.png);
-padding:200px 300px;
-background-repeat: no-repeat;
+  .how-made-wrap {
+    max-width: 614px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .how-made-text {
+    max-width: 350px;
+  }
 }
-
-.svg-made{
-width: 44px;
-height: 44px;
+/* Media Desktop */
+@media (min-width: 1200px) {
+  .how-made {
+    padding-top: 128px;
+  }
+  .hov-made-box {
+    display: flex;
+    gap: 20px;
+  }
+  .how-made-wrap {
+    max-width: 516px;
+  }
 }
-.chocolate-made-div {padding: 32px 32px 94px 32px ; margin-top: 0;max-width: 516px;}
-
-.chocolate-made {
-margin-bottom: 28px;
-}
-
-.made-list{
-display: flex;
-flex-direction: column;
-list-style: disc;
-color: var(--modal-title-color);
-font-family: Montserrat;
-font-weight: 400;
-font-size: 14px;
-line-height: 1.29;
-letter-spacing: -0.02em;
-gap: 24px;
-padding:0 0 0 16px;}
-
-.made-hide {display: none;}
-
-
-}
-
-
-
