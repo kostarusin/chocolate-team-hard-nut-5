@@ -50,7 +50,7 @@
 .hero-button {
   margin: auto;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   gap: 14px;
 }
 
@@ -64,7 +64,6 @@
   justify-content: center;
   color: var(--text-color-blond);
   border: none;
-  margin-left: 28px;
   transition-property: background-color;
   transition-duration: 250ms;
 }
@@ -114,9 +113,8 @@
   line-height: 1.7;
   letter-spacing: -0.03em;
   color: var(--text-color-blond);
-  margin-bottom: 20px;
+  padding-bottom: 20px;
   justify-content: center;
-  margin-left: 20px;
   transition-property: color;
   transition-duration: 250ms;
 }
