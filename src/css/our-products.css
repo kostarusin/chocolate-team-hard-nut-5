@@ -1,118 +1,117 @@
-
-.section-title {    
-    font-style: normal;
-    font-weight: 600;    
-    text-align: center;
-    letter-spacing: -0.03em;
-    text-transform: uppercase;
-    color: var(--modal-title-color);
+.section-title {
+  font-style: normal;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: var(--modal-title-color);
 }
 
 .second-part-section-title {
-    color: var(--text-color-accent);
+  color: var(--text-color-accent);
 }
 
 .cost-btn {
-    width: 94px;
-    height: 33px;
-    background: var(--main-background-color);
-    border: 1px solid rgba(17, 17, 17, 0.1);
-    border-radius: 100px;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 1.21;
-    color: var(--modal-title-color);
-    transition: border-color 250ms linear;
+  width: 94px;
+  height: 33px;
+  background: var(--main-background-color);
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 100px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
+  color: var(--modal-title-color);
+  transition: border-color 250ms linear;
 }
 
 .cost-btn:hover,
-.cost-btn:focus{
-    border-color: var(--text-color-accent);
+.cost-btn:focus {
+  border-color: var(--text-color-accent);
 }
 .card-products {
-    height: 364px;
-    text-align: center;
-    background-color: var(--text-color-blond);
-    border: 1px solid rgba(17, 17, 17, 0.1);
-    border-radius: 15px;
-    padding-top: 32px;
+  height: 364px;
+  text-align: center;
+  background-color: var(--text-color-blond);
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 15px;
+  padding-top: 32px;
 }
 
 .chocolate-img {
-    margin-left: auto;
-    margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .product-title {
-    margin-top: 8px;
-    margin-bottom: 2px;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 1.33;
-    letter-spacing: -0.02em;
-    text-transform: uppercase;
-    color: var(--modal-title-color);
+  margin-top: 8px;
+  margin-bottom: 2px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: var(--modal-title-color);
 }
 .card-products {
-    transition: box-shadow 250ms linear;
+  transition: box-shadow 250ms linear;
 }
 .card-products:hover,
-.card-products:focus{
-    box-shadow: 5px 5px 5px var(--modal-border-box-color);
+.card-products:focus {
+  box-shadow: 5px 5px 5px var(--modal-border-box-color);
 }
 
 .product-description {
-    font-size: 12px;
-    line-height: 1.17;
-    letter-spacing: -0.02em;
-    color: var(--text-color-our-products-reviews);
-    margin-bottom: 18px;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: -0.02em;
+  color: var(--text-color-our-products-reviews);
+  margin-bottom: 18px;
 }
 .product-list.swiper-wrapper {
-    height: 409px
+  height: 409px;
 }
 
 @media (max-width: 767px) {
-    .card-products {
-        width: 335px;
-        margin-left: auto;
-        margin-right: auto;
-    }
+  .card-products {
+    max-width: 335px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-    .section-title {
-        font-size: 20px;
-        line-height: 1.2;
-        margin-bottom: 32px;      
-    }     
-    .container.our-products{
-        padding-top: 72px;
-    }
+  .section-title {
+    font-size: 20px;
+    line-height: 1.2;
+    margin-bottom: 32px;
+  }
+  .container.our-products {
+    padding-top: 72px;
+  }
 }
 
 @media (min-width: 768px) {
-    .card-products {
-        width: 270px;
-    }
+  .card-products {
+    width: 270px;
+  }
 
-    .section-title {
-        font-size: 24px;
-        line-height: 1.17;
-        margin-bottom: 50px;
-    }   
-    .container.our-products {
-        padding-top: 100px;
-    }
+  .section-title {
+    font-size: 24px;
+    line-height: 1.17;
+    margin-bottom: 50px;
+  }
+  .container.our-products {
+    padding-top: 100px;
+  }
 }
 
 @media (min-width: 1200px) {
-    .section-title {
-        margin-bottom: 50px;
-    } 
-    .container.our-products {
-        padding-top: 128px;
-    }
+  .section-title {
+    margin-bottom: 50px;
+  }
+  .container.our-products {
+    padding-top: 128px;
+  }
 }
