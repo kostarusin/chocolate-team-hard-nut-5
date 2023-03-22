@@ -12,6 +12,9 @@
   color: #111111;
   margin-bottom: 32px;
 }
+.hov-made-tile-active {
+  color: #fd9222;
+}
 .how-made-video {
   position: relative;
   max-width: 614px;
