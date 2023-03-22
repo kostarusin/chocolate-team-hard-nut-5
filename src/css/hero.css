@@ -17,7 +17,7 @@
   display: inline-block;
 }
 
-.visually-hidden {
+/* .visually-hidden {
   position: absolute;
   white-space: nowrap;
   width: 1px;
@@ -28,7 +28,7 @@
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
   margin: -1px;
-}
+} */
 
 .hero-title {
   font-family: 'Montserrat', sans-serif;
@@ -131,7 +131,6 @@
 .h-scroll {
   display: flex;
   gap: 12px;
-  margin-bottom: 32px;
   cursor: pointer;
 }
 
